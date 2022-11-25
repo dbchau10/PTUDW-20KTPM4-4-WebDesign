@@ -10,28 +10,33 @@ body {
     padding: 30px 50px;
 }
 
+h1 {
+    font-family: 'Montserrat',Arial,sans-serif;
+}
 
 .video-container {
 
     width:100%;
-    overflow:hidden;
+    height: 100vh;
     position:absolute;
+    overflow: hidden;
     top:0;
     left:0;
+    right: 0;
+    left: 0;
     z-index: -100;
     
-    }
+}
     
-#video-bg{
+video {
     width:100%;
-    display: block;
 }
 
 .video-container:before {
     content: '';
     position: absolute;
     /* background: linear-gradient(45deg, rgba(40, 8, 8, 0.7), transparent);     */
-    background:  rgba(0, 0, 0, 0.7);      
+    background:  rgba(0, 0, 0, 0.7);  
     top: 0;
     right: 0;
     bottom: 0;
@@ -41,4 +46,37 @@ body {
 #collapsibleNavId a {
 padding: 0 2rem;
 display: inline-block;
+}
+
+.text-heading{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-family: 'Montserrat',Arial,sans-serif;
+    font-size: 5rem;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+form div {
+    display: flex;
+    flex-direction: row;
+    outline: none;
+}
+
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+#start{
+    border-radius: 50px 0 0 50px;
+}
+
+#end {
+    border-radius: 0 50px 50px 0;
 }

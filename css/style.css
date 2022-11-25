@@ -36,7 +36,7 @@ video {
     content: '';
     position: absolute;
     /* background: linear-gradient(45deg, rgba(40, 8, 8, 0.7), transparent);     */
-    background:  rgba(0, 0, 0, 0.7);  
+    background:  rgba(0, 0, 0, 0.5);  
     top: 0;
     right: 0;
     bottom: 0;
@@ -62,7 +62,7 @@ display: inline-block;
     flex-direction: column;
 }
 
-form div {
+form {
     display: flex;
     flex-direction: row;
     outline: none;
@@ -71,12 +71,12 @@ form div {
 
 input:focus, textarea:focus, select:focus{
     outline: none;
+  
 }
 
-#start{
-    border-radius: 50px 0 0 50px;
-}
-
-#end {
+.btn-search {
     border-radius: 0 50px 50px 0;
+    background: var(--web-green);
+    color: white;
+    font-weight: bold;
 }

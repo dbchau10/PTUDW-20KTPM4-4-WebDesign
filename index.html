@@ -56,21 +56,25 @@
         <div class="text-white text-center">
         Gobe
         </div>
-        <form class="mb-3 w-50">
-            <div class="rounded-pill">
-            <select class="form-select form-select-lg w-40 border-0" name="start" id="start">
-                <option selected>Select one</option>
-                <option value="">New Delhi</option>
-                <option value="">Istanbul</option>
-                <option value="">Jakarta</option>
+        <form class="mb-3 w-50  rounded-pill bg-white">
+            <h5 class="align-items-center d-flex ms-3 pt-1"><i class="fa-solid fa-location-dot text-black"></i></h5>
+            <select class="form-select form-select-lg w-40 border-0" name="start">
+                <option selected>Điểm đi</option>
+                <option value="">Hà Nội</option>
+                <option value="">Quảng Ninh</option>
+                <option value="">Ninh Bình</option>
             </select>
-            <select class="form-select form-select-lg w-40 border-0" name="end" id="end">
-                <option selected>Select one</option>
-                <option value="">New Delhi</option>
-                <option value="">Istanbul</option>
-                <option value="">Jakarta</option>
+            <h5 class="align-items-center d-flex ms-3 pt-1"><i class="fa-solid fa-location-dot text-black"></i></h5>
+            <select class="form-select form-select-lg w-40 border-0" name="end">
+                <option selected>Điểm đến</option>
+                <option value="">Đà Nẵng</option>
+                <option value="">Sài Gòn</option>
+                <option value="">Khánh Hoà</option>
             </select>
-            </div>
+            <input type="date" class="form-control border-0 w-10" name="date">
+            <button class="btn my-2 my-sm-0 btn-search" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
         </form>
     </section>
 </main>

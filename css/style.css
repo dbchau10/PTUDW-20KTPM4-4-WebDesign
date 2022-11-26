@@ -7,13 +7,19 @@ body {
     font-family: 'Inter', Arial, sans-serif;
     font-size: 16px;
     box-sizing: border-box;
-    padding: 30px 50px;
+    overflow:scroll;
+    min-height: 100vh;
 }
+
 
 h1 {
     font-family: 'Montserrat',Arial,sans-serif;
 }
 
+header {
+    height: 100vh;
+    align-items: flex-start;
+}
 .video-container {
 
     width:100%;
@@ -22,8 +28,8 @@ h1 {
     overflow: hidden;
     top:0;
     left:0;
+    bottom: 0;
     right: 0;
-    left: 0;
     z-index: -100;
     
 }
@@ -50,16 +56,17 @@ display: inline-block;
 
 .text-heading{
     width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    height: 100%;
     color: white;
     font-family: 'Montserrat',Arial,sans-serif;
     font-size: 5rem;
-    transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    top: 0;
+    left: 0;
 }
 
 form {

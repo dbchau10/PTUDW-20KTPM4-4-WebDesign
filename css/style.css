@@ -31,11 +31,14 @@ header {
     bottom: 0;
     right: 0;
     z-index: -100;
+    background: white;
     
 }
     
 video {
     width:100%;
+    -webkit-mask-image: url(/static/masked.png);
+    height: 100vh;
 }
 
 .video-container:before {
@@ -43,6 +46,7 @@ video {
     position: absolute;
     /* background: linear-gradient(45deg, rgba(40, 8, 8, 0.7), transparent);     */
     background:  rgba(0, 0, 0, 0.5);  
+    -webkit-mask-image: url(/static/masked.png);
     top: 0;
     right: 0;
     bottom: 0;
@@ -88,43 +92,7 @@ input:focus, textarea:focus, select:focus{
     font-weight: bold;
 }
 
-
-.carousel-cell {
-    width: 100%;
-    margin-right: 10px;
-  }
-
-  @media screen and ( min-width: 768px ) {
-    /* half-width cells for larger devices */
-    .carousel-cell { width: 25%; }
-  }
-
-  /* no circle */
-.flickity-button {
-    background: #333;
-  }
-
-  .flickity-button:hover {
-    background: var(--web-green);
-  }
-  /* big previous & next buttons */
-  .flickity-prev-next-button {
-    width: 30px;
-    height: 30px;
-  }
-
-  /* hide disabled button */
-  .flickity-button:disabled {
-    display: none;
-  }
-  
-  .flickity-button-icon {
-    fill: white;
-  }
-  /* position outside */
-.flickity-prev-next-button.previous {
-    left: -40px;
-  }
-  .flickity-prev-next-button.next {
-    right: -40px;
-  }
+.card {
+    height: 18rem;
+    width: 18rem;
+}

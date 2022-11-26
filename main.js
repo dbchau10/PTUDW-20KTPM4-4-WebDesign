@@ -19,14 +19,3 @@ owl.owlCarousel({
         }
     }
 })
-
-$('.main-carousel').flickity({
-    // options
-    cellAlign: 'left',
-    contain: true,
-    freeScroll: true,
-    pageDots: false,
-    wrapAround: true,
-    autoPlay: 1000
-
-  });

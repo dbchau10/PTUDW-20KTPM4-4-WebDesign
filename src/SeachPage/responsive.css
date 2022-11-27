@@ -1,0 +1,96 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 0 8px;
+  }
+
+  .route {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  .route__depart,
+  .route__des,
+  .route__date {
+    max-width: unset;
+    margin-bottom: 16px;
+  }
+
+  .function-btns {
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  footer {
+    padding: 0 8px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .info-detail {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .route-info {
+    margin-bottom: 8px;
+  }
+
+  .price {
+    margin-bottom: 8px;
+    position: unset;
+    text-align: center;
+  }
+  .empty-seat {
+    margin-bottom: 8px;
+    position: unset;
+    text-align: center;
+  }
+  .detail-link {
+    margin-bottom: 8px;
+    position: unset;
+    text-align: center;
+  }
+  .choose-btn {
+    margin-bottom: 8px;
+    position: unset;
+    text-align: center;
+  }
+
+  .footer__lists-conatiner {
+    flex-direction: column;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .bus-item {
+    flex-direction: column-reverse;
+  }
+
+  .info {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 16px;
+  }
+  .img-fluid {
+    width: 30%;
+  }
+
+  .pages {
+    width: 70%;
+  }
+
+  .footer__lists-conatiner {
+    width: 100%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+}

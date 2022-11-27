@@ -9,12 +9,6 @@
     <link rel="icon" href="static/favicon-32x32.png" type="image/png" />
 
     <!--Bootstrap Import-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
     <!--FontAwesome-->
     <script
       src="https://kit.fontawesome.com/419d1db655.js"
@@ -28,56 +22,269 @@
       rel="stylesheet"
     />
     <!--CSS Style-->
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/base.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
-      <nav
-        class="navbar navbar-expand-sm navbar-dark"
-        style="background-color: transparent"
-      >
-        <button
-          class="navbar-toggler d-lg-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapsibleNavId"
-          aria-controls="collapsibleNavId"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        ></button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="#" aria-current="page"
-                >Trang chủ <span class="visually-hidden">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Về chúng tôi</a>
-            </li>
-            <li class="nav-item">
-              <img src="./static/Search/avaImg.png" alt="" />
-            </li>
-          </ul>
+      <img src="/static/Images/logo.png" alt="ava-img" class="logo" />
+      <nav>
+        <div class="nav__item">
+          <a href="/" class="nav__link">Về chúng tôi</a>
+        </div>
+        <div class="nav__item">
+          <img src="/static/Images/avaImg.png" alt="ava-img" class="ava" />
         </div>
       </nav>
     </header>
     <main>
-      <section class="container-fluid">
-        <div class="video-container">
-          <video autoplay loop muted>
-            <source src="static/vietnam.mp4" type="video/mp4" />
-          </video>
-        </div>
-      </section>
-      <section class="text-heading"></section>
+      <form class="route" action="">
+        <select class="route__depart" name="departure-point" required>
+          <option value="">Điểm đi</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+        </select>
+        <select class="route__des" name="destination" required>
+          <option value="">Điểm đến</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+        </select>
+        <input class="route__date" type="date" name="date" id="" />
+      </form>
+
+      <div class="function-btns">
+        <button class="btn filter-btn">
+          Lọc
+          <i class="fa-solid fa-sliders"></i>
+        </button>
+        <button class="btn sort-btn">
+          Sắp xếp
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+      </div>
+
+      <ul class="bus-list">
+        <li class="bus-item">
+          <div class="info">
+            <div class="bus-name">Kết Đoàn Bus</div>
+            <div class="rate">
+              <spane>4.8</spane>
+              <i class="fa-solid fa-star"></i>
+              <span>(2747)</span>
+            </div>
+
+            <div class="bus-type">Ghế ngồi 16 chỗ</div>
+
+            <div class="info-detail">
+              <img
+                class="route-icon"
+                src="/static/Images/route-icon.png"
+                alt="route-icon"
+              />
+              <div class="route-info">
+                <div class="depart-point">
+                  <span class="time">14:50</span>
+                  <span class="pos">Văn phòng Mỹ Đình</span>
+                </div>
+                <span class="duration">1h45m</span>
+                <div class="desti-point">
+                  <span class="time">9:50</span>
+                  <span class="pos">728 Thiên Lôi</span>
+                </div>
+              </div>
+              <span class="price"> 150.000đ </span>
+              <span class="empty-seat">Còn 15 chỗ trống</span>
+              <a href="/" class="detail-link">Thông tin chi tiết</a>
+
+              <button class="btn choose-btn">Chọn chuyến</button>
+            </div>
+          </div>
+          <div class="img-fluid">
+            <img
+              src="/static/Images/car_img.png"
+              alt="car-img"
+              class="bus-img"
+            />
+          </div>
+        </li>
+        <li class="bus-item">
+          <div class="info">
+            <div class="bus-name">Kết Đoàn Bus</div>
+            <div class="rate">
+              <spane>4.8</spane>
+              <i class="fa-solid fa-star"></i>
+              <span>(2747)</span>
+            </div>
+
+            <div class="bus-type">Ghế ngồi 16 chỗ</div>
+
+            <div class="info-detail">
+              <img
+                class="route-icon"
+                src="/static/Images/route-icon.png"
+                alt="route-icon"
+              />
+              <div class="route-info">
+                <div class="depart-point">
+                  <span class="time">14:50</span>
+                  <span class="pos">Văn phòng Mỹ Đình</span>
+                </div>
+                <span class="duration">1h45m</span>
+                <div class="desti-point">
+                  <span class="time">9:50</span>
+                  <span class="pos">728 Thiên Lôi</span>
+                </div>
+              </div>
+              <span class="price"> 150.000đ </span>
+              <span class="empty-seat">Còn 15 chỗ trống</span>
+              <a href="/" class="detail-link">Thông tin chi tiết</a>
+
+              <button class="btn choose-btn">Chọn chuyến</button>
+            </div>
+          </div>
+          <div class="img-fluid">
+            <img
+              src="/static/Images/car_img.png"
+              alt="car-img"
+              class="bus-img"
+            />
+          </div>
+        </li>
+        <li class="bus-item">
+          <div class="info">
+            <div class="bus-name">Kết Đoàn Bus</div>
+            <div class="rate">
+              <spane>4.8</spane>
+              <i class="fa-solid fa-star"></i>
+              <span>(2747)</span>
+            </div>
+
+            <div class="bus-type">Ghế ngồi 16 chỗ</div>
+
+            <div class="info-detail">
+              <img
+                class="route-icon"
+                src="/static/Images/route-icon.png"
+                alt="route-icon"
+              />
+              <div class="route-info">
+                <div class="depart-point">
+                  <span class="time">14:50</span>
+                  <span class="pos">Văn phòng Mỹ Đình</span>
+                </div>
+                <span class="duration">1h45m</span>
+                <div class="desti-point">
+                  <span class="time">9:50</span>
+                  <span class="pos">728 Thiên Lôi</span>
+                </div>
+              </div>
+              <span class="price"> 150.000đ </span>
+              <span class="empty-seat">Còn 15 chỗ trống</span>
+              <a href="/" class="detail-link">Thông tin chi tiết</a>
+
+              <button class="btn choose-btn">Chọn chuyến</button>
+            </div>
+          </div>
+          <div class="img-fluid">
+            <img
+              src="/static/Images/car_img.png"
+              alt="car-img"
+              class="bus-img"
+            />
+          </div>
+        </li>
+        <li class="bus-item">
+          <div class="info">
+            <div class="bus-name">Kết Đoàn Bus</div>
+            <div class="rate">
+              <spane>4.8</spane>
+              <i class="fa-solid fa-star"></i>
+              <span>(2747)</span>
+            </div>
+
+            <div class="bus-type">Ghế ngồi 16 chỗ</div>
+
+            <div class="info-detail">
+              <img
+                class="route-icon"
+                src="/static/Images/route-icon.png"
+                alt="route-icon"
+              />
+              <div class="route-info">
+                <div class="depart-point">
+                  <span class="time">14:50</span>
+                  <span class="pos">Văn phòng Mỹ Đình</span>
+                </div>
+                <span class="duration">1h45m</span>
+                <div class="desti-point">
+                  <span class="time">9:50</span>
+                  <span class="pos">728 Thiên Lôi</span>
+                </div>
+              </div>
+              <span class="price"> 150.000đ </span>
+              <span class="empty-seat">Còn 15 chỗ trống</span>
+              <a href="/" class="detail-link">Thông tin chi tiết</a>
+
+              <button class="btn choose-btn">Chọn chuyến</button>
+            </div>
+          </div>
+          <div class="img-fluid">
+            <img
+              src="/static/Images/car_img.png"
+              alt="car-img"
+              class="bus-img"
+            />
+          </div>
+        </li>
+      </ul>
+
+      <div class="pages">
+        <div class="page">1</div>
+        <div class="page">2</div>
+        <div class="page active">3</div>
+        <div class="page">4</div>
+        <div class="page">5</div>
+      </div>
     </main>
+
+    <footer>
+      <img src="/static/Images/logo.png" alt="" class="footer__logo" />
+      <ul class="footer__lists-conatiner">
+        <li>
+          <div class="footer__title">Liên hệ</div>
+          <ul>
+            <li class="footer__text">+ 123 400 123</li>
+            <li class="footer__text">Email: gobe@gmail.com</li>
+            <li></li>
+            <li></li>
+          </ul>
+        </li>
+        <li>
+          <div class="footer__title">Về chúng tôi</div>
+          <ul>
+            <li class="footer__text">Giới thiệu Gobe</li>
+            <li class="footer__text">Tuyển dụng</li>
+            <li></li>
+            <li></li>
+          </ul>
+        </li>
+        <li>
+          <div class="footer__title">Hỗ trợ</div>
+          <ul>
+            <li class="footer__text">Hướng dẫn thanh toán</li>
+            <li class="footer__text">Chính sách bảo mật thông tin</li>
+            <li class="footer__text">Chính sách bảo mật thanh toán</li>
+            <li class="footer__text">
+              Chính sách và quy trình<br />giải quyết tranh chấp, khiếu nại
+            </li>
+            <li class="footer__text">Câu hỏi thường gặp</li>
+            <li class="footer__text">Tra cứu đơn hàng</li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
     <script src="main.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

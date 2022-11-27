@@ -26,11 +26,18 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-sm navbar-dark p-5" style="background-color: transparent;">
-        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-            aria-expanded="false" aria-label="Toggle navigation"></button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+    <video autoplay loop muted>
+        <source src="static/vietnam.mp4" type="video/mp4" width="100%" height="100%">
+        </video>
+    <nav class="navbar navbar-expand-sm navbar-dark p-5">
+        <div class="container">
+        <a class="navbar-brand d-block d-sm-none" href="#">Gobe</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#menu-header" aria-controls="menu-header"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu-header">
+            <ul class="navbar-nav ms-auto mt-4 mt-lg-0">
                 <li class="nav-item">
                     <a class="nav-link active" href="#" aria-current="page">Trang chủ <span class="visually-hidden">(current)</span></a>
                 </li>
@@ -45,18 +52,14 @@
                 </li>
             </ul>
         </div>
+    </div>
     </nav>
 
-        <div class="video-container">
-            <video autoplay loop muted >
-            <source src="static/vietnam.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class="text-heading">
+        <div class="text-heading d-none d-lg-flex">
             <div class="text-white text-center">
-                Gobe
+               <div id="title"> Gobe </div>
                 </div>
-                <form class="mb-3 w-50  rounded-pill bg-white">
+                <form class="mb-3 w-50  rounded-pill bg-white search-form">
                     <h5 class="align-items-center d-flex ms-3 pt-1"><i class="fa-solid fa-location-dot text-black"></i></h5>
                     <select class="form-select form-select-lg w-40 border-0" name="start">
                         <option selected>Điểm đi</option>
@@ -77,72 +80,105 @@
                     </button>
                 </form>
         </div>
-
+        <div class="form-heading d-lg-none">
+            <form class="mb-3 rounded submit-form">
+                <select class="form-select form-select-lg rounded-0" name="" id="">
+                    <option selected>Điểm đi</option>
+                    <option value="">Hà Nội</option>
+                    <option value="">Quảng Ninh</option>
+                    <option value="">Ninh Bình</option>
+                </select>
+                <select class="form-select form-select-lg rounded-0" name="" id="">
+                    <option selected>Điểm đến</option>
+                        <option value="">Đà Nẵng</option>
+                        <option value="">Sài Gòn</option>
+                        <option value="">Khánh Hoà</option>
+                </select>
+                <input type="date" class="form-control rounded-0" name="date">
+            </form>
+        </div>
 </header>
 <main>
 
 <section class="container p-5">
+      <h3 class="fw-bold py-4">Tuyến đường phổ biến</h3>
       <div class="owl-carousel owl-theme">
         <div class="item">
             <div class="card">
             <img src="/static/destination/dalat.jpeg" height="60%" class="card-img-top" alt="...">
+            
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Sài Gòn - Đà Lạt</h5>
+              <p class="card-text">150.000đ</p>
             </div>
           </div></div>
         <div class="item">
             <div class="card">
         <img src="/static/destination/nhatrang.jpeg" height="60%" class="card-img-top" alt="...">
+       
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title">Sài Gòn-Nha Trang</h5>
+          <p class="card-text">230.000đ</p>
         </div>
       </div>
         </div>
         <div class="item">
             <div class="card">
             <img src="/static/destination/phanthiet.jpeg" height="60%" class="card-img-top" alt="...">
+          
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Sài Gòn - Phan Thiết</h5>
+              <p class="card-text">150.000đ</p>
             </div>
           </div>
         </div>
         <div class="item">
             <div class="card">
                 <img src="/static/destination/danang.jpeg" height="60%" class="card-img-top" alt="...">
+                
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title">Bình Định - Đà Nẵng</h5>
+                  <p class="card-text">350.000đ</p>
                 </div>
               </div>
         </div>
         <div class="item">
             <div class="card">
                 <img src="/static/destination/phanrang.jpeg" height="60%" class="card-img-top" alt="...">
+             
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title">Vũng Tàu - Phan Rang</h5>
+                  <p class="card-text">170.000đ</p>
                 </div>
               </div>
         </div>
         <div class="item">
             <div class="card">
                 <img src="/static/destination/phuyen.jpeg" height="60%" class="card-img-top" alt="...">
+              
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title">Nam Định - Phú Yên</h5>
+                  <p class="card-text">190.000đ</p>
                 </div>
               </div>
         </div>
         <div class="item">
             <div class="card">
                 <img src="/static/destination/hoian.jpeg" height="60%" class="card-img-top" alt="...">
+               
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title">Bình Thuận - Quảng Nam</h5>
+                  <p class="card-text">220.000đ</p>
                 </div>
               </div>
         </div>
         <div class="item">
             <div class="card">
                 <img src="/static/destination/halong.jpeg" height="60%" class="card-img-top" alt="...">
+              
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title">Hà Nội - Quảng Ninh</h5>
+                  <p class="card-text">100.000đ</p>
                 </div>
               </div>
         </div>

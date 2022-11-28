@@ -25,3 +25,17 @@ owl.owlCarousel({
         }
     }
 })
+
+$(function () {
+    $(document).scroll(function () {
+      var $nav = $("nav");
+      if ($(this).scrollTop() > $nav.height())
+      {
+        $nav.removeClass('navbar-dark').addClass('navbar-light bg-light shadow');
+      }
+      else
+      {
+        $nav.removeClass('navbar-light bg-light shadow').addClass('navbar-dark');
+      }
+    });
+  });

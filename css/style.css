@@ -132,3 +132,9 @@ input:focus, textarea:focus, select:focus{
 .owl-item {
     width: fit-content !important;
 }
+
+
+#about {
+    color: var(--web-green);
+    font-weight: bold;
+}

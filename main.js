@@ -5,21 +5,22 @@ owl.owlCarousel({
     dots: false,
     nav:true,
     center: true,
-    // autoplay:true,
-    // autoplayTimeout:1000,
-    // autoplayHoverPause:true,
+    responsiveClass:true,
+    autoplay:true,
+    autoplayTimeout: 1500,
+    autoplayHoverPause:true,
     responsive:{
         0:{
             items:1
         },
-        600:{
+        768:{
             items:2
         },
 
-        780: {
+        992: {
             items: 3
         },
-        1000:{
+        1200:{
             items:4
         }
     }

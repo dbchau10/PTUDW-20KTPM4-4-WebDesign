@@ -67,12 +67,11 @@ footer * {
   margin-bottom: 8px;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-}
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
+  :root {
+    --header-padding: 8px;
+  }
   header {
     padding: 0 8px;
   }
@@ -101,6 +100,10 @@ footer * {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
+  .footer__lists-conatiner {
+    flex-direction: column;
+  }
+
   .footer__lists-conatiner {
     flex-direction: column;
   }

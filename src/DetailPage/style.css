@@ -242,7 +242,28 @@ main {
 }
 
 .other-buses-list {
-  /* overflow-x: scroll; */
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.other-buses-list::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+/* Track */
+.other-buses-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.other-buses-list::-webkit-scrollbar-thumb {
+  background: var(--choose-btn-color);
+}
+
+/* Handle on hover */
+.other-buses-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .other-buses .other-bus {
@@ -251,6 +272,7 @@ main {
   border-radius: 8px;
   padding: 16px;
   margin-right: 16px;
+  min-width: 212px;
 }
 
 .other-bus:nth-child(2n + 1) {

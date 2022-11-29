@@ -1,0 +1,48 @@
+:root {
+    --web-green: #49B649;
+
+}
+body{
+   
+    
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/static/268_Organic_White_Background.jpg') no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 16px;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 30px;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items:center;
+  }
+
+  @media only screen and (max-width: 767px) {
+    body {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/static/background.jpeg') no-repeat top center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+  }
+  
+img {
+    border-radius: 1rem 0 0 1rem;
+}
+
+.bg-glass {
+    background-color: hsla(0, 0%, 100%, 0.9) !important;
+    backdrop-filter: saturate(200%) blur(25px);
+  }
+
+
+.title {
+    font-family: 'Montserrat',Arial,sans-serif;
+}
+
+
+.image-custom {
+     background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/static/background.jpeg') no-repeat top center;
+     border-radius: 1rem 0 0 1rem;
+}

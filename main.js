@@ -32,13 +32,13 @@ $(function () {
       if ($(this).scrollTop() > $nav.height())
       {
         $nav.removeClass('navbar-dark').addClass('navbar-light bg-light shadow');
-        $(".navbar-brand").removeClass('d-sm-none').addClass('text-success');
+        $(".navbar-brand").addClass('text-success');
       }
       else
       {
 
         $nav.removeClass('navbar-light bg-light shadow').addClass('navbar-dark');
-        $(".navbar-brand").removeClass('text-success').addClass('d-sm-none');
+        $(".navbar-brand").removeClass('text-success');
         
       }
     });

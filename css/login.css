@@ -39,3 +39,20 @@ img {
      background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/static/imagec.jpg') no-repeat top center;
      border-radius: 1rem 0 0 1rem;
 }
+
+.digit-group 
+
+        input[type="text"] {
+		width: 30px;
+		height: 40px;
+		border: 1px solid #ccc;
+		text-align: center;
+		margin: 0 2px;
+        
+	
+}
+
+.digit-group {
+    display: none;
+}
+

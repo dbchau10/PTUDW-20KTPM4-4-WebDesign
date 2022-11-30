@@ -60,7 +60,20 @@
                         <input type="text"  id="digit-6" name="digit-6" data-previous="digit-5" />
 
                         </div>
-                        <input class="btn btn-success w-100 outlined-0 btn-token" type="button" onclick="location.href='/index.html'"  value="Xác nhận tài khoản">
+                        <input class="btn btn-success w-100 outlined-0 btn-token" type="button" onclick="validToken(event)"  value="Xác nhận tài khoản" />
+                    </form>
+                    <form class="reset-password w-100">
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="password">Mật khẩu</label>
+                            <input type="password" id="password" class="form-control" required />
+                          </div>
+                          <div class="form-outline mb-4">
+                            <label class="form-label" for="password">Mật khẩu nhập lại</label>
+                            <input type="password" id="check-password" class="form-control" onkeyup="checkPassword(event)" required />
+                          </div>
+                          <span class="text-danger warning mb-2"></span>
+                          <input class="btn btn-success w-100 outlined-0" type="button" onclick="location.href='/login.html'" value="Thay đổi mật khẩu" />
+
                     </form>
                     <div class="py-3">Bạn chưa có tài khoản ? <a class="text-decoration-none" href="/signup.html">Đăng ký</a></div>
                   </div>

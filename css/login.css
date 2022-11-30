@@ -52,7 +52,7 @@ img {
 	
 }
 
-.digit-group {
+.digit-group, .reset-password {
     display: none;
 }
 

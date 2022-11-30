@@ -1,7 +1,4 @@
-let otpInput = document.querySelector(".digit-group .input");
-
-
-    
+   
     function tokenHandler(e) {
         e.preventDefault();
 
@@ -10,6 +7,18 @@ let otpInput = document.querySelector(".digit-group .input");
         e.target.style.display="none";
         let digit = document.querySelector('.digit-group');
         digit.style.display="inline-block";
+
+    }
+
+    function validToken(e){
+        e.preventDefault();
+        let pre = document.querySelector('.form-valid');
+        pre.style.display="none";
+        let token = document.querySelector('.digit-group');
+        token.style.display="none";
+        e.target.style.display="none";
+        reset = document.querySelector(".reset-password");
+        reset.style.display="inline-block";
 
     }
 
@@ -37,3 +46,19 @@ let otpInput = document.querySelector(".digit-group .input");
         });
     });
 
+
+
+
+    function checkPassword(e) {
+        let note = document.querySelector(".warning");
+        e.preventDefault();
+        let password = document.getElementById('password');
+        if (e.target.value == password.value)
+        {
+            note.innerText=" ";
+        }
+        else {
+
+            note.innerText="Mật khẩu không đúng.";
+        }
+        };

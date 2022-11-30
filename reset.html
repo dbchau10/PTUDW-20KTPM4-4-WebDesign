@@ -50,16 +50,17 @@
                       </div>
                     <input class="btn btn-success w-100 outlined-0 btn-valid" type="button" onclick="tokenHandler(event)" value="Tìm kiếm tài khoản">
                     </form>
-                    <form class="digit-group w-100" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+                    <form method="post" class="digit-group w-100" data-group-name="digits" data-autosubmit="true" autocomplete="on">
                         <div class="mb-4">
-                        <input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
-                        <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
-                        <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
-                        <input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" />
-                        <input type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" />
-                        <input type="text" id="digit-6" name="digit-6" data-previous="digit-5" />
+                        <input type="text"  id="digit-1" name="digit-1" data-next="digit-2" />
+                        <input type="text"  id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+                        <input type="text"  id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+                        <input type="text"  id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" />
+                        <input type="text"  id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" />
+                        <input type="text"  id="digit-6" name="digit-6" data-previous="digit-5" />
+
                         </div>
-                        <input class="btn btn-success w-100 outlined-0" type="button" onclick="tokenHandler(e)" value="Xác nhận tài khoản">
+                        <input class="btn btn-success w-100 outlined-0 btn-token" type="button" onclick="location.href='/index.html'"  value="Xác nhận tài khoản">
                     </form>
                     <div class="py-3">Bạn chưa có tài khoản ? <a class="text-decoration-none" href="/signup.html">Đăng ký</a></div>
                   </div>

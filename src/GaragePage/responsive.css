@@ -1,5 +1,13 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
+  body main {
+    padding: 0 8px !important;
+  }
+
+  .garage__title {
+    width: 90%;
+  }
+
   .comment-name {
     flex-direction: column;
     align-items: flex-start;
@@ -12,6 +20,10 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
+  body main {
+    padding: 0 16px;
+  }
+
   .bus-item {
     flex-direction: column-reverse;
   }
@@ -25,6 +37,11 @@
 
   .garage {
     width: 100%;
+  }
+
+  .images-view {
+    margin-top: 16px;
+    padding-left: 0;
   }
 
   .utility-container {

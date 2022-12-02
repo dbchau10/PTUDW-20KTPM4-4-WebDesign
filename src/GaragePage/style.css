@@ -18,8 +18,8 @@ main {
 /* Images View */
 
 .images-view {
-  width: 33.3333%;
-  margin-right: 16px;
+  width: 50%;
+  padding-left: 64px;
 }
 
 .img-main {
@@ -41,154 +41,28 @@ main {
   margin-right: 0;
 }
 
-/* Bus Info */
-
-.bus-item {
-  width: 33.3333%;
-  display: flex;
-  align-items: center;
-  border-radius: 3px;
-  padding: var(--padding-item);
-  padding-top: 0;
-  --padding-item: 16px;
-  margin-bottom: 16px;
-}
-.info {
-  width: 100%;
-  position: relative;
-}
-.bus-name {
-  color: var(--black-color);
-  font-size: 24px;
-  margin-right: 8px;
-}
-.bus-item .rate {
-  width: fit-content;
-  color: var(--white-color);
-  background-color: var(--green-color);
-  border-radius: 8px;
-  padding: 4px 8px;
-  margin-bottom: 16px;
-}
-
-.bus-item .rate * {
-  font-size: 12px;
-}
-
-.bus-type {
-  font-size: 16px;
-  color: #6c757d;
-  margin-bottom: 8px;
-}
-
-.info-detail {
-  min-height: 130px;
-}
-
-.route-icon {
-  position: absolute;
-}
-
-.route-info {
-  padding-left: 30px;
-  min-height: 126px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 16px;
-}
-
-.depart-point {
-}
-.time,
-.pos {
-  color: var(--black-color);
-}
-
-.time {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.pos {
-  font-size: 16px;
-}
-.desti-point * {
-  color: var(--text-color);
-}
-.duration {
-}
-.price {
-  color: var(--green-color);
-  font-size: 26px;
-  font-weight: 600;
-}
-.empty-seat {
-  font-weight: 500;
-}
-
-.choose-btn {
-  display: block;
-  background-color: var(--choose-btn-color);
-  color: var(--white-color);
-  font-size: 16px;
-  min-width: 150px;
-  height: 50px;
-  border-radius: 4px;
-  width: 100%;
-}
-
-.pay-with-zalo {
-  display: flex;
-  align-items: center;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  width: fit-content;
-  padding: 12px;
-  margin-top: 16px;
-}
-
-.pay-with-zalo .discount {
-  color: #ff2727;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.pay-with-zalo span {
-  text-align: center;
-  font-size: 12px;
-  color: var(--black-color);
-  width: 70px;
-}
-
-.pay-with-zalo img {
-  width: 40px;
-  height: 40px;
-}
-
 /* Garage */
 
 .garage__container {
-  width: 33.3333%;
+  width: 50%;
   display: flex;
   justify-content: flex-end;
   margin-top: 16px;
 }
 
 .garage {
+  width: 100%;
   padding: 16px;
   border: 1px solid var(--border-color);
   border-radius: 16px;
-  width: 80%;
   height: fit-content;
   justify-items: flex-end;
 }
 
 .garage__title {
-  font-size: 20px;
-  font-weight: 600;
-  width: 120px;
-  margin-left: 8px;
+  font-size: 60px;
+  font-weight: 800;
+  width: 60%;
 }
 
 .garage__title span {
@@ -201,7 +75,8 @@ main {
 }
 
 .garage .rate {
-  margin-top: 16px;
+  margin-top: 8px;
+  margin-bottom: 32px;
   font-size: 16px;
   font-weight: 600;
 }
@@ -213,6 +88,15 @@ main {
 }
 
 .garage__info {
+  margin-bottom: 32px;
+}
+
+.garage__info * {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.garage__info > div {
   margin-bottom: 16px;
 }
 
@@ -220,231 +104,43 @@ main {
   margin-right: 8px;
 }
 
-.garage .show-btn {
-  border-color: var(--choose-btn-color);
-  width: 100%;
-}
-
-.garage .show-btn a {
-  color: var(--choose-btn-color);
-}
-
-/* Other buses */
-
-.other-buses {
-  padding: 16px 0;
-}
-.other-buses .title {
-  margin-bottom: 16px;
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--black-color);
-}
-
-.other-buses-list {
-  width: 100%;
-  overflow-x: scroll;
-}
-
-.other-buses-list::-webkit-scrollbar {
-  width: 3px;
-  height: 3px;
-}
-
-/* Track */
-.other-buses-list::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-.other-buses-list::-webkit-scrollbar-thumb {
-  background: var(--choose-btn-color);
-}
-
-/* Handle on hover */
-.other-buses-list::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-.other-buses .other-bus {
+.garage-quality-list {
   display: flex;
   flex-direction: column;
-  border-radius: 8px;
-  padding: 16px;
-  margin-right: 16px;
-  min-width: 212px;
+  flex-wrap: wrap;
+  height: 130px;
 }
-
-.other-bus:nth-child(2n + 1) {
-  background-color: #d9d9d9;
-}
-
-.other-bus:nth-child(2n) {
-  background-color: #ececec;
-}
-
-.other-buses .rate {
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-.other-buses .garage-name {
-  font-size: 26px;
-  font-weight: 600;
-  color: var(--black-color);
-  margin-bottom: 16px;
-}
-.other-buses .route {
-  font-size: 20px;
-  color: var(--black-color);
-}
-.other-buses .price {
-  font-size: 20px;
-  color: var(--green-color);
-}
-
-/* Pick up */
-.pick-up {
-  margin: 16px 0;
-  font-size: 20px;
-}
-.pick-up-title {
-  font-size: 24px;
-  color: var(--black-color);
-  font-weight: 600;
-}
-
-.pick-up .noti {
-  font-size: 16px;
-  margin-bottom: 8px;
-}
-
-.pick-up .noti span {
-  font-weight: 600;
-  color: var(--green-color);
-}
-.location-container {
-  margin-bottom: 32px;
-}
-.pick-up .time {
-  margin-right: 16px;
-}
-.pick-up .location {
-}
-.location__head {
-  background-color: #d9d9d9;
-  padding: 8px;
+.garage-quality-item {
+  display: flex;
+  align-items: center;
   margin-bottom: 16px;
 }
 
-.location__head i {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 24px;
+.garage-quality-item img {
   margin-right: 8px;
+  width: 20px;
+  height: 20px;
 }
 
-.location__head div {
-  color: var(--black-color);
-}
-
-.location-info {
-  margin-bottom: 8px;
-}
-
-/* policy */
-
-.policy {
-  padding: 16px;
-  width: 50%;
-  font-size: 16px;
-  color: var(--text-color);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-}
-.policy .title {
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--black-color);
-}
-
-.policy img {
-  width: 100%;
-}
-
-.policy .noti {
-  margin-bottom: 16px;
-}
-
-.policy .noti span {
-  font-weight: 600;
-  color: var(--black-color);
-}
-
-.request .title {
-  font-weight: 600;
-  margin-bottom: 16px;
-}
-
-.policy .request {
-}
-
-/* utility */
-
-.req-list {
-  list-style-type: disc;
-  padding-left: 16px;
-}
-.req-item {
-  margin-bottom: 8px;
-}
-
-.utility-container {
-  padding-left: 32px;
-  width: 50%;
-}
-.utility {
-  width: 100%;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  overflow: hidden;
-}
-.utility .title {
-  text-align: center;
-  padding: 16px 0;
-  font-weight: 600;
-  font-size: 24px;
-}
-
-.utility-list {
-  display: flex;
-  flex-direction: column;
-  overflow-y: scroll;
-  max-height: 450px;
-}
-
-.utility-item {
-  display: flex;
-  padding: 16px;
-  border-top: 1px solid var(--border-color);
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.utility-item img {
-  width: 60px;
-  height: 60px;
-  margin-right: 16px;
-}
-
-.utility-item-title {
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--black-color);
-}
-.utility-item-text {
+.garage-quality-item span {
   font-size: 20px;
-  color: var(--black-color);
+  font-weight: 500;
 }
 
-/* customer rate */
+/* slogan */
+
+.slogan {
+  width: 80%;
+  border: 1px dashed #000000;
+  background-color: rgba(217, 217, 217, 0.3);
+  font-style: italic;
+  font-size: 30px;
+  text-align: center;
+  padding: 16px 64px;
+  margin: 64px auto;
+}
+
+/* comment */
 
 .customer-rate {
   padding: 16px;
@@ -477,8 +173,7 @@ main {
 .comment-item {
   display: flex;
   padding: 32px;
-  background-color: rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
 }
 
 .comment-item .ava {
@@ -493,7 +188,7 @@ main {
 }
 
 .comment-name {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .comment-name span {
@@ -501,6 +196,12 @@ main {
   font-weight: 600;
   margin-right: 8px;
 }
+
+.comment-date {
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+
 .comment-text {
   max-height: 54px;
 }

@@ -1,0 +1,121 @@
+header {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--white-color);
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--header-padding);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.header__wrapper {
+  margin: auto;
+}
+
+.logo {
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item {
+  margin-left: 32px;
+}
+.nav__link {
+  font-weight: 800;
+}
+.ava {
+}
+
+/* Footer */
+
+footer {
+  display: block;
+  padding: 0 var(--header-padding);
+}
+
+footer * {
+  text-align: right;
+}
+
+.footer__logo {
+  margin-bottom: 32px;
+}
+
+.footer__lists-conatiner {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.footer__text {
+  color: var(--black-color);
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  :root {
+    --header-padding: 8px;
+  }
+  header {
+    padding: 0 8px;
+  }
+
+  .route {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  .route__depart,
+  .route__des,
+  .route__date {
+    max-width: unset;
+    margin-bottom: 16px;
+  }
+
+  .function-btns {
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  footer {
+    padding: 0 8px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .footer__lists-conatiner {
+    flex-direction: column;
+  }
+
+  .footer__lists-conatiner {
+    flex-direction: column;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .footer__lists-conatiner {
+    width: 100%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+}

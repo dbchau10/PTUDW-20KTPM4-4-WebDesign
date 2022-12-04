@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gobe | Trang chủ</title>
+    <!--Favicon-->
+    <link rel="icon" href="/static/favicon-32x32.png" type="image/png" />
+
+    <!--Bootstrap Import-->
+    <!--FontAwesome-->
+    <script
+      src="https://kit.fontawesome.com/419d1db655.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!--CSS Style-->
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/headerAndFooter.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+  </head>
+  <body>
+    <header>
+      <a href="/index.html">
+        <img src="/static/Images/logo.png" alt="ava-img" class="logo" />
+        </a>
+      <nav>
+        <div class="nav__item">
+          <a href="#" class="nav__link">Về chúng tôi</a>
+        </div>
+        <div class="nav__item">
+          <img src="/static/Images/avaImg.png" alt="ava-img" class="ava" />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="main__nav">
+        <div class="main__nav-item active">
+          <div class="align-center">
+            <div class="nav__index">1</div>
+            <div class="nav__title">Chỗ mong muốn</div>
+          </div>
+        </div>
+        <div class="main__nav-item">
+          <div class="align-center">
+            <div class="nav__index">2</div>
+            <div class="nav__title">Điểm đón trả</div>
+          </div>
+        </div>
+        <div class="main__nav-item">
+          <div class="align-center">
+            <div class="nav__index">3</div>
+            <div class="nav__title">Nhập thông tin</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main__container main__container--1 flex">
+        <div class="left">
+          <div class="title">Chú thích</div>
+          <div class="seat-type-list">
+            <div class="seat-type-item align-center">
+              <img src="/static/Images/ghetrong.svg" alt="seat-type-img" />
+              <span>Còn trống</span>
+            </div>
+            <div class="seat-type-item align-center">
+              <img src="/static/Images/gheko trong.svg" alt="seat-type-img" />
+              <span>Ghế không bán</span>
+            </div>
+            <div class="seat-type-item align-center">
+              <img src="/static/Images/ghedangchon.svg" alt="seat-type-img" />
+              <span>Đang chọn</span>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <img
+            class="seat-map"
+            src="/static/Images/seat-map.svg"
+            alt="seat-map"
+          />
+        </div>
+      </div>
+
+      <div class="main__container main__container--2">
+        <div class="greentext title">
+          An tâm được đón đúng nơi, trả đúng chỗ đã chọn và dễ dàng thay đổi khi
+          cần.
+        </div>
+        <div class="pick-up flex">
+          <div class="location-container left">
+            <div class="location__head align-center">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="pick-up-title">Điểm đón</div>
+            </div>
+            <div class="location-info align-center">
+              <div class="time">09:50</div>
+              <span class="location">Văn phòng Mỹ Đình</span>
+            </div>
+            <div class="location-info align-center">
+              <div class="time">09:50</div>
+              <span class="location">Văn phòng Mỹ Đình</span>
+            </div>
+            <div class="location-info align-center">
+              <div class="time">09:50</div>
+              <span class="location">Văn phòng Mỹ Đình</span>
+            </div>
+          </div>
+          <div class="location-container right">
+            <div class="location__head align-center">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="pick-up-title">Điểm trả</div>
+            </div>
+            <div class="location-info align-center">
+              <div class="time">11:15</div>
+              <span class="location">Trung tâm thành phố Hải Phòng</span>
+            </div>
+            <div class="location-info align-center">
+              <div class="time">11:15</div>
+              <span class="location">Trung tâm thành phố Hải Phòng</span>
+            </div>
+            <div class="location-info align-center">
+              <div class="time">11:15</div>
+              <span class="location">Trung tâm thành phố Hải Phòng</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main__container main__container--3 active">
+        <div class="greentext title">
+          Chúng tôi chỉ dùng thông tin của bạn trong việc ghi nhận vé.
+        </div>
+        <form class="info-form" action="">
+          <div class="text-section">
+            <div class="input-item">
+              <div class="title">Họ tên</div>
+              <input type="text" placeholder="Họ tên" />
+            </div>
+            <div class="input-item">
+              <div class="title">Số điện thoại</div>
+              <input type="text" placeholder="Số điện thoại" />
+            </div>
+            <div class="input-item">
+              <div class="title">Email</div>
+              <input type="text" placeholder="Email" />
+            </div>
+          </div>
+          <div class="title">Ghi chú hoặc yêu cầu khác (Nếu có)</div>
+          <textarea name="" id="" rows="10"></textarea>
+        </form>
+      </div>
+
+      <div class="main__footer main__footer--0 align-center">
+        <div class="seat-quantity">Số lượng: 1</div>
+        <div class="align-center">
+          <div class="total-price">Tổng cộng: <span>150000đ</span></div>
+          <button class="btn large continue-btn">Tiếp tục</button>
+        </div>
+      </div>
+      <div class="main__footer main__footer--1 align-center">
+        <div class="back-text">Quay lại</div>
+        <div class="align-center">
+          <div class="total-price">Tổng cộng: <span>150000đ</span></div>
+          <button class="btn large continue-btn">Tiếp tục</button>
+        </div>
+      </div>
+      <div class="main__footer main__footer--2 active align-center">
+        <div class="back-text">Quay lại</div>
+        <div class="align-center">
+          <div class="total-price">Tổng cộng: <span>150000đ</span></div>
+          <button class="btn large continue-btn">Tiếp tục</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <img src="/static/Images/logo.png" alt="" class="footer__logo" />
+      <ul class="footer__lists-conatiner">
+        <li>
+          <div class="footer__title">Liên hệ</div>
+          <ul>
+            <li class="footer__text">+ 123 400 123</li>
+            <li class="footer__text">Email: gobe@gmail.com</li>
+            <li></li>
+            <li></li>
+          </ul>
+        </li>
+        <li>
+          <div class="footer__title">Về chúng tôi</div>
+          <ul>
+            <li class="footer__text">Giới thiệu Gobe</li>
+            <li class="footer__text">Tuyển dụng</li>
+            <li></li>
+            <li></li>
+          </ul>
+        </li>
+        <li>
+          <div class="footer__title">Hỗ trợ</div>
+          <ul>
+            <li class="footer__text">Hướng dẫn thanh toán</li>
+            <li class="footer__text">Chính sách bảo mật thông tin</li>
+            <li class="footer__text">Chính sách bảo mật thanh toán</li>
+            <li class="footer__text">
+              Chính sách và quy trình<br />giải quyết tranh chấp, khiếu nại
+            </li>
+            <li class="footer__text">Câu hỏi thường gặp</li>
+            <li class="footer__text">Tra cứu đơn hàng</li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

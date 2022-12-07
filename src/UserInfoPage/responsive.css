@@ -1,0 +1,93 @@
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .left .align-center {
+    display: block;
+  }
+
+  .info-item {
+    display: block;
+  }
+  .info-label {
+    margin-bottom: 8px;
+  }
+
+  .right__info-item {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: unset;
+  }
+
+  .info-item-icon {
+    float: unset;
+  }
+  .btn.outline.btn--update {
+    margin-top: 16px !important;
+    float: unset;
+    margin: auto;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  aside {
+    display: block;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .container__inner {
+    display: block;
+  }
+
+  .left {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    border-right: none;
+  }
+
+  .right {
+    display: block;
+    width: 100%;
+    padding: 16px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  main {
+    display: block;
+  }
+
+  .container {
+    margin: auto;
+    width: 100%;
+    padding: 16px;
+  }
+
+  aside {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .sidebar__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sidebar__item {
+    padding: 8px;
+    text-align: center;
+    margin-right: 4px;
+  }
+
+  .container__inner {
+  }
+}

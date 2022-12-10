@@ -10,13 +10,10 @@ main {
   --choose-btn-color: #0acf83;
 }
 
-
-
 .container1 {
   padding-top: 32px;
   display: flex;
 }
-
 
 /* Images View */
 
@@ -537,7 +534,7 @@ main {
 }
 
 .title {
-  font-family: 'Montserrat',Arial,sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
 }
 .nav__item {
   margin-left: 32px;
@@ -546,10 +543,10 @@ header {
   position: relative;
 }
 
-footer{
+footer {
   z-index: 100;
   position: relative;
-  bottom:0;
+  bottom: 0;
   left: 0;
   width: 100%;
   display: flex;

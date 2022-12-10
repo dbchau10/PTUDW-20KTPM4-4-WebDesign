@@ -50,11 +50,17 @@
         </div>
       </nav>
     </header> -->
-    
+
     <header>
-      <nav class="navbar navbar-expand-sm navbar-light bg-light shadow py-4 fixed-top">
+      <nav
+        class="navbar navbar-expand-sm navbar-light bg-light shadow py-4 fixed-top"
+      >
         <div class="container">
-          <a class="navbar-brand text-success d-block d-sm-none title" href="#top">Gobe</a>
+          <a
+            class="navbar-brand text-success d-block d-sm-none title"
+            href="#top"
+            >Gobe</a
+          >
           <button
             class="navbar-toggler d-lg-none"
             type="button"
@@ -95,7 +101,13 @@
                 </li>
                 <li>
                   <div class="nav__item">
-                    <img width="40px" height="40px" src="/static/Images/avaImg.png" alt="ava-img" class="ava" />
+                    <img
+                      width="40px"
+                      height="40px"
+                      src="/static/Images/avaImg.png"
+                      alt="ava-img"
+                      class="ava"
+                    />
                   </div>
                 </li>
               </ul>
@@ -167,7 +179,9 @@
               <span class="price"> 150.000đ </span>
               <span class="empty-seat">Còn 15 chỗ trống</span>
 
-              <button class="btn large choose-btn" onclick="location.href='../PaymentPage/index.html'">Chọn chuyến</button>
+              <button class="btn large choose-btn" onclick="handleChooseBtn()">
+                Chọn chuyến
+              </button>
             </div>
             <div class="pay-with-zalo">
               <div class="discount">50% OFF</div>
@@ -211,7 +225,10 @@
               </div>
             </div>
 
-            <button class="show-btn btn outline large" onclick="location.href='../GaragePage/index.html'">
+            <button
+              class="show-btn btn outline large"
+              onclick="location.href='../GaragePage/index.html'"
+            >
               <a href="../GaragePage/index.html">Xem Nhà Xe</a>
             </button>
           </div>
@@ -659,6 +676,150 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <!-- Modal -->
+    <div class="modal">
+      <i class="modal__close-icon fa-solid fa-xmark"></i>
+      <div class="modal__container">
+        <div class="main__nav">
+          <div class="main__nav-item active">
+            <div class="align-center">
+              <div class="nav__index">1</div>
+              <div class="nav__title">Chỗ mong muốn</div>
+            </div>
+          </div>
+          <div class="main__nav-item">
+            <div class="align-center">
+              <div class="nav__index">2</div>
+              <div class="nav__title">Điểm đón trả</div>
+            </div>
+          </div>
+          <div class="main__nav-item">
+            <div class="align-center">
+              <div class="nav__index">3</div>
+              <div class="nav__title">Nhập thông tin</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__container main__container--1 flex active">
+          <div class="left">
+            <div class="title">Chú thích</div>
+            <div class="seat-type-list">
+              <div class="seat-type-item align-center">
+                <img src="/static/Images/ghetrong.svg" alt="seat-type-img" />
+                <span>Còn trống</span>
+              </div>
+              <div class="seat-type-item align-center">
+                <img src="/static/Images/gheko trong.svg" alt="seat-type-img" />
+                <span>Ghế không bán</span>
+              </div>
+              <div class="seat-type-item align-center">
+                <img src="/static/Images/ghedangchon.svg" alt="seat-type-img" />
+                <span>Đang chọn</span>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <img
+              class="seat-map"
+              src="/static/Images/seat-map.svg"
+              alt="seat-map"
+            />
+          </div>
+        </div>
+
+        <div class="main__container main__container--2">
+          <div class="greentext title">
+            An tâm được đón đúng nơi, trả đúng chỗ đã chọn và dễ dàng thay đổi
+            khi cần.
+          </div>
+          <div class="pick-up flex">
+            <div class="location-container left">
+              <div class="location__head align-center">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="pick-up-title">Điểm đón</div>
+              </div>
+              <div class="location-info align-center">
+                <div class="time">09:50</div>
+                <span class="location">Văn phòng Mỹ Đình</span>
+              </div>
+              <div class="location-info align-center">
+                <div class="time">09:50</div>
+                <span class="location">Văn phòng Mỹ Đình</span>
+              </div>
+              <div class="location-info align-center">
+                <div class="time">09:50</div>
+                <span class="location">Văn phòng Mỹ Đình</span>
+              </div>
+            </div>
+            <div class="location-container right">
+              <div class="location__head align-center">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="pick-up-title">Điểm trả</div>
+              </div>
+              <div class="location-info align-center">
+                <div class="time">11:15</div>
+                <span class="location">Trung tâm thành phố Hải Phòng</span>
+              </div>
+              <div class="location-info align-center">
+                <div class="time">11:15</div>
+                <span class="location">Trung tâm thành phố Hải Phòng</span>
+              </div>
+              <div class="location-info align-center">
+                <div class="time">11:15</div>
+                <span class="location">Trung tâm thành phố Hải Phòng</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__container main__container--3">
+          <div class="greentext title">
+            Chúng tôi chỉ dùng thông tin của bạn trong việc ghi nhận vé.
+          </div>
+          <form class="info-form" action="">
+            <div class="text-section">
+              <div class="input-item">
+                <div class="title">Họ tên</div>
+                <input type="text" placeholder="Họ tên" />
+              </div>
+              <div class="input-item">
+                <div class="title">Số điện thoại</div>
+                <input type="text" placeholder="Số điện thoại" />
+              </div>
+              <div class="input-item">
+                <div class="title">Email</div>
+                <input type="text" placeholder="Email" />
+              </div>
+            </div>
+            <div class="title">Ghi chú hoặc yêu cầu khác (Nếu có)</div>
+            <textarea name="" id="" rows="10"></textarea>
+          </form>
+        </div>
+
+        <div class="main__footer main__footer--0 align-center">
+          <div class="seat-quantity">Số lượng: 1</div>
+          <div class="align-center">
+            <div class="total-price">Tổng cộng: <span>150000đ</span></div>
+            <button class="btn large continue-btn">Tiếp tục</button>
+          </div>
+        </div>
+        <div class="main__footer main__footer--1 align-center">
+          <div class="back-text">Quay lại</div>
+          <div class="align-center">
+            <div class="total-price">Tổng cộng: <span>150000đ</span></div>
+            <button class="btn large continue-btn">Tiếp tục</button>
+          </div>
+        </div>
+        <div class="main__footer main__footer--2 active align-center">
+          <div class="back-text">Quay lại</div>
+          <div class="align-center">
+            <div class="total-price">Tổng cộng: <span>150000đ</span></div>
+            <button class="btn large continue-btn">Tiếp tục</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>

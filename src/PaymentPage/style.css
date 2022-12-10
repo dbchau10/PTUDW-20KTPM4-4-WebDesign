@@ -169,9 +169,8 @@ main {
 
 .text-section {
   display: flex;
-  flex-direction: column;
+
   flex-wrap: wrap;
-  height: 230px;
 }
 
 .input-item {
@@ -214,7 +213,7 @@ main {
 
 /* Update start */
 .title {
-  font-family: 'Montserrat',Arial,sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
 }
 .nav__item {
   margin-left: 32px;
@@ -223,10 +222,10 @@ header {
   position: relative;
 }
 
-footer{
+footer {
   z-index: 100;
   position: relative;
-  bottom:0;
+  bottom: 0;
   left: 0;
   width: 100%;
   display: flex;

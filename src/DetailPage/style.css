@@ -10,10 +10,13 @@ main {
   --choose-btn-color: #0acf83;
 }
 
-.container {
+
+
+.container1 {
   padding-top: 32px;
   display: flex;
 }
+
 
 /* Images View */
 
@@ -531,4 +534,27 @@ main {
 .page.active {
   color: #49b649;
   background-color: #dcf9dc;
+}
+
+.title {
+  font-family: 'Montserrat',Arial,sans-serif;
+}
+.nav__item {
+  margin-left: 32px;
+}
+header {
+  position: relative;
+}
+
+footer{
+  z-index: 100;
+  position: relative;
+  bottom:0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 7rem;
+  text-align: left;
 }

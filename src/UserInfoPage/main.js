@@ -1,7 +1,7 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-const container = $(".container");
+const container = $(".container1");
 
 const sidebarAccountInfo = $(".sidebar__item:nth-child(1)");
 const sidebarMyTicket = $(".sidebar__item:nth-child(3)");

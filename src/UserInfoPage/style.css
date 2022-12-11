@@ -21,7 +21,7 @@ aside {
   padding-right: 16px;
 }
 
-.container {
+.container1 {
   display: block;
   width: 80%;
 }
@@ -61,8 +61,7 @@ aside {
   border: 1px solid var(--border-color);
 }
 
-.container {
-}
+
 .container__title {
   color: var(--web-green);
   font-weight: 600;
@@ -490,9 +489,8 @@ aside {
 .nav__item {
   margin-left: 32px;
 }
-header {
-  position: relative;
-}
+
+
 
 footer {
   z-index: 100;
@@ -505,4 +503,8 @@ footer {
   justify-content: center;
   padding: 3rem 7rem;
   text-align: left;
+}
+
+nav {
+  z-index: 100;
 }

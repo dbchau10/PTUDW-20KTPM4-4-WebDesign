@@ -8,13 +8,13 @@
     <!--Favicon-->
     <link rel="icon" href="/static/favicon-32x32.png" type="image/png" />
 
-     <!--Bootstrap Import-->
-     <link
-     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-     rel="stylesheet"
-     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-     crossorigin="anonymous"
-   />
+    <!--Bootstrap Import-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
     <!-- Update start-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -24,11 +24,11 @@
     />
     <!-- Update end-->
 
-     <!--FontAwesome-->
-     <script
-     src="https://kit.fontawesome.com/419d1db655.js"
-     crossorigin="anonymous"
-   ></script>
+    <!--FontAwesome-->
+    <script
+      src="https://kit.fontawesome.com/419d1db655.js"
+      crossorigin="anonymous"
+    ></script>
     <!--Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -105,14 +105,10 @@
                   <h2 class="title py-3">Gobe</h2>
                 </li>
                 <li class="nav-item">
-<<<<<<< HEAD
                   <a
                     class="nav-link active"
                     href="/src/index.html"
                     aria-current="page"
-=======
-                  <a class="nav-link active" href="../index.html" aria-current="page"
->>>>>>> code-refactor-2
                     >Trang chủ <span class="visually-hidden">(current)</span></a
                   >
                 </li>
@@ -121,26 +117,15 @@
                     >Về chúng tôi</a
                   >
                 </li>
-<<<<<<< HEAD
-                <li>
-                  <div class="nav__item">
-                    <a href="/src/UserInfoPage/index.html">
-                      <div class="nav__item">
-                        <img
-                          src="/static/Images/avaImg.png"
-                          alt="ava-img"
-                          class="ava"
-                        />
-                      </div>
-                    </a>
-                  </div>
-=======
                 <li class="nav-item">
-                  <a class="nav-link" href="../LoginPage/index.html">Đăng nhập</a>
+                  <a class="nav-link" href="../LoginPage/index.html"
+                    >Đăng nhập</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../SignUpPage/index.html">Đăng ký</a>
->>>>>>> code-refactor-2
+                  <a class="nav-link" href="../SignUpPage/index.html"
+                    >Đăng ký</a
+                  >
                 </li>
               </ul>
             </div>
@@ -151,13 +136,21 @@
 
     <main class="container">
       <form class="route" action="">
-        <select class="route__depart form-select form-select-lg" name="departure-point" required>
+        <select
+          class="route__depart form-select form-select-lg"
+          name="departure-point"
+          required
+        >
           <option value="">Điểm đi</option>
           <option value="saab">Saab</option>
           <option value="opel">Opel</option>
           <option value="audi">Audi</option>
         </select>
-        <select class="route__des form-select form-select-lg" name="destination" required>
+        <select
+          class="route__des form-select form-select-lg"
+          name="destination"
+          required
+        >
           <option value="">Điểm đến</option>
           <option value="saab">Saab</option>
           <option value="opel">Opel</option>
@@ -171,18 +164,36 @@
           Lọc
           <i class="fa-solid fa-sliders"></i>
         </button> -->
-        <button class="btn outline filter-btn" name="filter" id="filter" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <button
+          class="btn outline filter-btn"
+          name="filter"
+          id="filter"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
           <span>Lọc</span>
           <i class="fa-solid fa-arrow-up-wide-short"></i>
         </button>
-        
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
           <div class="offcanvas-header oc-h">
             <h5 class="fw-bold m-0">Bộ lọc</h5>
             <div>
-            <span class="fst-italic text-primary">Xóa lọc</span>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
+              <span class="fst-italic text-primary">Xóa lọc</span>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
           </div>
           <div class="offcanvas-body">
             <h5 class="fw-bold py-4">Giờ đi</h5>
@@ -207,7 +218,7 @@
               </div>
             </div>
             <h5 class="fw-bold py-4">Giá vé</h5>
-            <input type="range" class="form-range" id="customRange1">
+            <input type="range" class="form-range" id="customRange1" />
             <div class="range">
               <div>0đ</div>
               <div>200.000đ</div>
@@ -216,13 +227,15 @@
           </div>
         </div>
 
-
-
         <!-- <button class="btn sort-btn">
           Sắp xếp
           <i class="fa-solid fa-angle-down"></i>
         </button> -->
-        <select class="btn outline sort-btn form-select form-select-lg" name="sort" id="sort">
+        <select
+          class="btn outline sort-btn form-select form-select-lg"
+          name="sort"
+          id="sort"
+        >
           <option selected>Sắp xếp</option>
           <option value="early">Giờ đi sớm nhất</option>
           <option value="late">Giờ đi muộn nhất</option>

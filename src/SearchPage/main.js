@@ -27,8 +27,8 @@
 //     nav.classList.add('shadow');
 //     }
 
-
-
+const $$ = document.querySelectorAll.bind(document);
+const $ = document.querySelector.bind(document);
 
 function handleModalPayMent() {
   const navItems = $$(".main__nav-item");

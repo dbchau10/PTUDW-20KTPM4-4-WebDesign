@@ -211,6 +211,47 @@
               <div>200.000đ</div>
             </div>
             <h5 class="fw-bold py-3">Vị trí ghế</h5>
+            <div class="d-flex flex-row justify-content-between align-items-center">
+              <div>Số ghế trống</div>
+              <div>
+                <input type='button' value='-' class='qtyminus minus' field='quantity' />
+                <input type='text' name='quantity' value='0' class='qty' />
+                <input type='button' value='+' class='qtyplus plus text-primary bg-primary bg-opacity-25' field='quantity' />
+              </div>
+            </div>
+            <form class="py-4">
+            <hr />
+            <div class="d-flex flex-row justify-content-between my-2">
+              <label for="first">Hàng ghế đầu</label><br />
+              <input
+                type="checkbox"
+                id="first"
+                name="first"
+                value="first"
+              />
+            </div>
+            <hr />
+            <div class="d-flex flex-row justify-content-between my-2">
+              <label for="first">Hàng ghế giữa</label><br />
+              <input
+                type="checkbox"
+                id="mid"
+                name="mid"
+                value="mid"
+              />
+            </div>
+            <hr />
+            <div class="d-flex flex-row justify-content-between my-2">
+              <label for="first">Hàng ghế cuối</label><br />
+              <input
+                type="checkbox"
+                id="last"
+                name="last"
+                value="last"
+              />
+            </div>
+          </form>
+
             <h5 class="fw-bold py-4">Nhà xe</h5>
             <div class="input-group mb-3 search-bar">
               <input type="text" class="form-control" placeholder="Search" />

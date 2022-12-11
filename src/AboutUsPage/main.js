@@ -46,6 +46,9 @@ const contentList = [
 
 Array.from(sidebarItems).forEach((item, index) => {
   item.onclick = () => {
+    const curActive = $(".active.sidebar__item");
+    curActive.classList.remove("active");
+    item.classList.add("active");
     contentTitle.innerHTML = contentList[index].title;
     contentPara.innerHTML = contentList[index].content;
   };

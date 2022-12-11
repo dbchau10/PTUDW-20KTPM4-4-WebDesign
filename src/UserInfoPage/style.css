@@ -497,6 +497,15 @@ aside {
   margin-left: 32px;
 }
 
+header {
+  width: 100vw;
+  position: relative;
+}
+
+nav {
+  z-index: 100;
+}
+
 footer {
   z-index: 100;
   position: relative;
@@ -508,8 +517,4 @@ footer {
   justify-content: center;
   padding: 3rem 7rem;
   text-align: left;
-}
-
-nav {
-  z-index: 100;
 }

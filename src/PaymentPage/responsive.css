@@ -1,6 +1,11 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 576px) {
+  .nav-link.active {
+    color: var(--white-color) !important;
+  }
+}
+
 @media only screen and (max-width: 600px) {
-  
   .route {
     flex-direction: column;
     padding-bottom: 0;

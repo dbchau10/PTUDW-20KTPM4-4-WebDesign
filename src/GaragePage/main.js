@@ -1,18 +1,29 @@
-let offcanvas = document.querySelector(".navbar-toggler");
-  offcanvas.addEventListener('click', canvasHandling);
+const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
 
-  function canvasHandling(e){
-    e.preventDefault();
-    let $nav = $("nav");
-    $nav.removeClass('navbar-light bg-light shadow').addClass('navbar-dark');
+let offcanvas = $(".navbar-toggler");
+// const $nav = $("nav");
+// offcanvas.addEventListener("click", canvasHandling);
 
-  }
+offcanvas.onclick = canvasHandling;
 
-  let close = document.querySelector(".btn-close");
-  close.addEventListener('click', closeHandler);
+function canvasHandling(e) {
+  let $nav = $("nav");
+  $nav.classList.remove("navbar-light");
+  $nav.classList.remove("bg-light");
+  $nav.classList.remove("shadow");
+  $nav.classList.add("navbar-dark");
+}
 
-  function closeHandler(e){
-    e.preventDefault();
-    let $nav = $("nav");
-    $nav.removeClass('navbar-dark').addClass('navbar-light bg-light shadow');
-    }
+let close = $(".btn-close");
+// close.addEventListener("click", closeHandler);
+
+close.onclick = closeHandler;
+
+function closeHandler(e) {
+  let $nav = $("nav");
+  $nav.classList.remove("navbar-dark");
+  $nav.classList.add("navbar-light");
+  $nav.classList.add("bg-light");
+  $nav.classList.add("shadow");
+}

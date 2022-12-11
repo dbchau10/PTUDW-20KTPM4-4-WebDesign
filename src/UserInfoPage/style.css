@@ -5,7 +5,7 @@
 }
 
 .nav-link.active {
-  color: var(--white-color) !important;
+  color: var(--white-color);
 }
 
 main {

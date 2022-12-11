@@ -71,6 +71,27 @@ function handleModalPayMent() {
     };
   });
 
+  const nextBtns = $$(".continue-btn");
+  console.log(nextBtns);
+  Array.from(nextBtns).forEach((nextBtn, index) => {
+    nextBtn.onclick = () => {
+      if (index < 2) {
+        console.log(123);
+        const navItemActive = $(".main__nav-item.active");
+        const mainContainerActive = $(".main__container.active");
+        const mainFooterActive = $(".main__footer.active");
+
+        navItemActive.classList.remove("active");
+        mainContainerActive.classList.remove("active");
+        mainFooterActive.classList.remove("active");
+
+        navItems[index + 1].classList.add("active");
+        mainContainers[index + 1].classList.add("active");
+        mainFooters[index + 1].classList.add("active");
+      }
+    };
+  });
+
   closeIcon.onclick = () => {
     modal.style.display = "none";
   };

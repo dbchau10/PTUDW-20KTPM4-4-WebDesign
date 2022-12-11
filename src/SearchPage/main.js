@@ -99,4 +99,3 @@ function handleChooseBtn() {
 }
 
 handleModalPayMent();
-handleChooseBtn();

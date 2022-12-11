@@ -580,3 +580,8 @@ footer {
   display: flex;
   justify-content: center;
 }
+
+
+.search-bar{
+  width: 80% !important;
+}

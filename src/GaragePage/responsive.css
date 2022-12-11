@@ -27,11 +27,11 @@
   .bus-item {
     flex-direction: column-reverse;
   }
-  .container {
+  .container1 {
     flex-direction: column;
   }
 
-  .container > * {
+  .container1 > * {
     width: 100%;
   }
 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gobe | Trang chủ</title>
     <!--Favicon-->
-    <link rel="icon" href="static/favicon-32x32.png" type="image/png" />
+    <link rel="icon" href="/static/favicon-32x32.png" type="image/png" />
 
     <!--Bootstrap Import-->
     <link
@@ -20,6 +20,7 @@
       src="https://kit.fontawesome.com/419d1db655.js"
       crossorigin="anonymous"
     ></script>
+    
     <!--Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,13 +46,14 @@
     />
 
     <!--CSS Style-->
-    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="/css/home.css" />
   </head>
+
   <body>
     <header id="top">
       <video autoplay loop muted>
         <source
-          src="static/vietnam.mp4"
+          src="/static/vietnam.mp4"
           type="video/mp4"
           width="100%"
           height="100%"
@@ -99,10 +101,10 @@
                   <a class="nav-link" href="#">Về chúng tôi</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/login.html">Đăng nhập</a>
+                  <a class="nav-link" href="../src/LoginPage/index.html">Đăng nhập</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/signup.html">Đăng ký</a>
+                  <a class="nav-link" href="../src/SignUpPage/index.html">Đăng ký</a>
                 </li>
               </ul>
             </div>
@@ -114,46 +116,45 @@
         <div class="text-white text-center">
           <div class="title">Gobe</div>
         </div>
-        <form method="get" action="/src/SearchPage/index.html" class="mb-3 w-50 rounded-pill bg-white search-form">
+        <form method="get" action="../src/SearchPage/index.html" class="mb-3 w-50 rounded-pill bg-white search-form">
           <h5 class="align-items-center d-flex ms-3 pt-1">
             <i class="fa-solid fa-location-dot text-black"></i>
           </h5>
           <select class="form-select form-select-lg w-40 border-0" name="start">
             <option selected>Điểm đi</option>
-            <option value="">Hà Nội</option>
-            <option value="">Quảng Ninh</option>
-            <option value="">Ninh Bình</option>
+            <option value="hanoi">Hà Nội</option>
+            <option value="quangninh">Quảng Ninh</option>
+            <option value="ninhbinh">Ninh Bình</option>
           </select>
           <h5 class="align-items-center d-flex ms-3 pt-1">
             <i class="fa-solid fa-location-dot text-black"></i>
           </h5>
           <select class="form-select form-select-lg w-40 border-0" name="end">
             <option selected>Điểm đến</option>
-            <option value="">Đà Nẵng</option>
-            <option value="">Sài Gòn</option>
-            <option value="">Khánh Hoà</option>
+            <option value="danang">Đà Nẵng</option>
+            <option value="saigon">Sài Gòn</option>
+            <option value="khanhoa">Khánh Hoà</option>
           </select>
           <input type="date" class="form-control border-0 w-10" name="date" />
-          <button class="btn my-2 my-sm-0 btn-search" type="submit" onclick="location.href='./src/SearchPage/index.html'">
+          <button class="btn my-2 my-sm-0 btn-search" type="submit" onclick="location.href='../src/SearchPage/index.html'">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
       </div>
       <div class="form-heading d-lg-none">
-        <form class="my-3 submit-form rounded bg-white p-2" method="get" action="/src/SearchPage/index.html">
+        <form class="my-3 submit-form rounded bg-white p-2"  action="../src/SearchPage/index.html">
           <div class="d-flex flex-row">
             <h5 class="align-items-center d-flex ms-3">
               <i class="fa-solid fa-location-dot text-primary"></i>
             </h5>
             <select
               class="form-select form-select-lg border-bottom border-0 rounded-0"
-              name=""
-              id=""
+              name="start"
             >
               <option selected>Điểm đi</option>
-              <option value="">Hà Nội</option>
-              <option value="">Quảng Ninh</option>
-              <option value="">Ninh Bình</option>
+              <option value="hanoi">Hà Nội</option>
+              <option value="quangninh">Quảng Ninh</option>
+              <option value="ninhbinh">Ninh Bình</option>
             </select>
           </div>
           <div class="d-flex flex-row">
@@ -162,13 +163,12 @@
             </h5>
             <select
               class="form-select form-select-lg border-bottom border-0 rounded-0"
-              name=""
-              id=""
+              name="end"
             >
               <option selected>Điểm đến</option>
-              <option value="">Đà Nẵng</option>
-              <option value="">Sài Gòn</option>
-              <option value="">Khánh Hoà</option>
+              <option value="danang">Đà Nẵng</option>
+              <option value="saigon">Sài Gòn</option>
+              <option value="khanhoa">Khánh Hoà</option>
             </select>
           </div>
           <input
@@ -176,10 +176,11 @@
             class="form-control border-0 rounded-0 ps-5"
             name="date"
           />
-          <button class="btn btn-success mt-4" type="submit" onclick="location.href='./src/SearchPage/index.html'">Tìm vé</button>
+          <button class="btn btn-success mt-4" type="submit" onclick="location.href='../src/SearchPage/index.html'">Tìm vé</button>
         </form>
       </div>
     </header>
+
     <main>
       <section class="container p-5">
         <div class="row text-bg-black">
@@ -189,6 +190,7 @@
               class="m-3"
               width="50rem"
               height="50rem"
+              alt="garage"
             />
             <h5>2000+ nhà xe chất lượng cao</h5>
             <p class="text-black-50">
@@ -197,10 +199,11 @@
           </div>
           <div class="col-lg-3 col-md-6 text-center py-2">
             <img
-              src="/static/ticket-solid.svg"
+              src="../static/ticket-solid.svg"
               class="m-3"
               width="50rem"
               height="50rem"
+              alt="ticket"
             />
             <h5>Đặt vé dễ dàng</h5>
             <p class="text-black-50">
@@ -209,10 +212,11 @@
           </div>
           <div class="col-lg-3 col-md-6 text-center py-2">
             <img
-              src="/static/circle-check-regular.svg"
+              src="../static/circle-check-regular.svg"
               class="m-3"
               width="50rem"
               height="50rem"
+              alt="gurantee"
             />
             <h5>Đảm bảo có vé</h5>
             <p class="text-black-50">
@@ -221,10 +225,11 @@
           </div>
           <div class="col-lg-3 col-md-6 text-center py-2">
             <img
-              src="/static/tags-solid.svg"
+              src="../static/tags-solid.svg"
               class="m-3"
               width="50rem"
               height="50rem"
+              alt="discount"
             />
             <h5>Nhiều ưu đãi</h5>
             <p class="text-black-50">
@@ -240,7 +245,7 @@
           <div class="item">
             <div class="card">
               <img
-                src="/static/destination/dalat.jpeg"
+                src="../static/destination/dalat.jpeg"
                 height="60%"
                 class="card-img-top"
                 alt="..."
@@ -255,7 +260,7 @@
           <div class="item">
             <div class="card">
               <img
-                src="/static/destination/nhatrang.jpeg"
+                src="../static/destination/nhatrang.jpeg"
                 height="60%"
                 class="card-img-top"
                 alt="..."
@@ -270,7 +275,7 @@
           <div class="item">
             <div class="card">
               <img
-                src="/static/destination/phanthiet.jpeg"
+                src="../static/destination/phanthiet.jpeg"
                 height="60%"
                 class="card-img-top"
                 alt="..."
@@ -285,7 +290,7 @@
           <div class="item">
             <div class="card">
               <img
-                src="/static/destination/danang.jpeg"
+                src="../static/destination/danang.jpeg"
                 height="60%"
                 class="card-img-top"
                 alt="..."
@@ -300,7 +305,7 @@
           <div class="item">
             <div class="card">
               <img
-                src="/static/destination/phanrang.jpeg"
+                src="../static/destination/phanrang.jpeg"
                 height="60%"
                 class="card-img-top"
                 alt="..."
@@ -315,7 +320,7 @@
           <div class="item">
             <div class="card">
               <img
-                src="/static/destination/phuyen.jpeg"
+                src="../static/destination/phuyen.jpeg"
                 height="60%"
                 class="card-img-top"
                 alt="..."
@@ -330,7 +335,7 @@
           <div class="item">
             <div class="card">
               <img
-                src="/static/destination/hoian.jpeg"
+                src="../static/destination/hoian.jpeg"
                 height="60%"
                 class="card-img-top"
                 alt="..."
@@ -345,7 +350,7 @@
           <div class="item">
             <div class="card">
               <img
-                src="/static/destination/halong.jpeg"
+                src="../static/destination/halong.jpeg"
                 height="60%"
                 class="card-img-top"
                 alt="..."
@@ -364,7 +369,7 @@
           <div class="item">
             <div class="card">
               <img
-                src="/static/discount/zalopay.png"
+                src="../static/discount/zalopay.png"
                 height="60%"
                 class="card-img-top"
                 alt="..."
@@ -380,7 +385,7 @@
           <div class="item">
             <div class="card">
               <img
-                src="/static/discount/discount.png"
+                src="../static/discount/discount.png"
                 height="60%"
                 class="card-img-top"
                 alt="..."
@@ -396,7 +401,7 @@
           <div class="item">
             <div class="card">
               <img
-                src="/static/discount/uudai.jpg"
+                src="../static/discount/uudai.jpg"
                 height="60%"
                 class="card-img-top"
                 alt="..."
@@ -412,7 +417,7 @@
           <div class="item">
             <div class="card">
               <img
-                src="/static/discount/sacombank.png"
+                src="../static/discount/sacombank.png"
                 height="60%"
                 class="card-img-top"
                 alt="..."
@@ -428,7 +433,7 @@
           <div class="item">
             <div class="card">
               <img
-                src="/static/discount/uu-dai-t12.jpg"
+                src="../static/discount/uu-dai-t12.jpg"
                 height="60%"
                 class="card-img-top"
                 alt="..."
@@ -459,11 +464,12 @@
             <button class="btn btn-success my-4">Xem thêm</button>
           </div>
           <div class="col-lg-8 col-md-6 p-3">
-            <img src="/static/bus.jpg" width="100%" class="rounded" />
+            <img src="../static/bus.jpg" width="100%" class="rounded" alt="bus" />
           </div>
         </div>
       </section>
     </main>
+
     <footer
       class="shadow d-flex flex-column align-items-start justify-space-between"
     >
@@ -512,7 +518,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="./main.js"></script>
 
-    <script src="main.js"></script>
   </body>
 </html>

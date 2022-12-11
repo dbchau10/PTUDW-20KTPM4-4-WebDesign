@@ -71,4 +71,3 @@ function handleChooseBtn() {
 }
 
 handleModalPayMent();
-handleChooseBtn();

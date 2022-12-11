@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gobe | Trang chủ</title>
+    <title>Gobe | Về chúng tôi</title>
     <!--Favicon-->
     <link rel="icon" href="/static/favicon-32x32.png" type="image/png" />
 
@@ -32,7 +32,7 @@
     />
     <!--CSS Style-->
     <link rel="stylesheet" href="/css/base.css" />
-    <!-- <link rel="stylesheet" href="/css/headerAndFooter.css" /> -->
+    <link rel="stylesheet" href="/css/headerAndFooter.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./responsive.css" />
   </head>
@@ -50,6 +50,7 @@
         </div>
       </nav>
     </header> -->
+
     <header>
       <nav
         class="navbar navbar-expand-sm navbar-light bg-light shadow py-4 fixed-top"
@@ -106,9 +107,7 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/src/AboutUsPage/index.html"
-                    >Về chúng tôi</a
-                  >
+                  <a class="nav-link" href="#">Về chúng tôi</a>
                 </li>
                 <li>
                   <div class="nav__item">
@@ -129,147 +128,44 @@
         </div>
       </nav>
     </header>
+
     <main>
-      <div class="main__nav">
-        <div class="main__nav-item active">
-          <div class="align-center">
-            <div class="nav__index">1</div>
-            <div class="nav__title">Chỗ mong muốn</div>
-          </div>
-        </div>
-        <div class="main__nav-item">
-          <div class="align-center">
-            <div class="nav__index">2</div>
-            <div class="nav__title">Điểm đón trả</div>
-          </div>
-        </div>
-        <div class="main__nav-item">
-          <div class="align-center">
-            <div class="nav__index">3</div>
-            <div class="nav__title">Nhập thông tin</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="main__container main__container--1 flex active">
-        <div class="left">
-          <div class="title">Chú thích</div>
-          <div class="seat-type-list">
-            <div class="seat-type-item align-center">
-              <img src="/static/Images/ghetrong.svg" alt="seat-type-img" />
-              <span>Còn trống</span>
-            </div>
-            <div class="seat-type-item align-center">
-              <img src="/static/Images/gheko trong.svg" alt="seat-type-img" />
-              <span>Ghế không bán</span>
-            </div>
-            <div class="seat-type-item align-center">
-              <img src="/static/Images/ghedangchon.svg" alt="seat-type-img" />
-              <span>Đang chọn</span>
-            </div>
-          </div>
-        </div>
-        <div class="right">
-          <img
-            class="seat-map"
-            src="/static/Images/seat-map.svg"
-            alt="seat-map"
-          />
-        </div>
-      </div>
-
-      <div class="main__container main__container--2">
-        <div class="greentext title">
-          An tâm được đón đúng nơi, trả đúng chỗ đã chọn và dễ dàng thay đổi khi
-          cần.
-        </div>
-        <div class="pick-up flex">
-          <div class="location-container left">
-            <div class="location__head align-center">
-              <i class="fa-solid fa-location-dot"></i>
-              <div class="pick-up-title">Điểm đón</div>
-            </div>
-            <div class="location-info align-center">
-              <div class="time">09:50</div>
-              <span class="location">Văn phòng Mỹ Đình</span>
-            </div>
-            <div class="location-info align-center">
-              <div class="time">09:50</div>
-              <span class="location">Văn phòng Mỹ Đình</span>
-            </div>
-            <div class="location-info align-center">
-              <div class="time">09:50</div>
-              <span class="location">Văn phòng Mỹ Đình</span>
-            </div>
-          </div>
-          <div class="location-container right">
-            <div class="location__head align-center">
-              <i class="fa-solid fa-location-dot"></i>
-              <div class="pick-up-title">Điểm trả</div>
-            </div>
-            <div class="location-info align-center">
-              <div class="time">11:15</div>
-              <span class="location">Trung tâm thành phố Hải Phòng</span>
-            </div>
-            <div class="location-info align-center">
-              <div class="time">11:15</div>
-              <span class="location">Trung tâm thành phố Hải Phòng</span>
-            </div>
-            <div class="location-info align-center">
-              <div class="time">11:15</div>
-              <span class="location">Trung tâm thành phố Hải Phòng</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="main__container main__container--3">
-        <div class="greentext title">
-          Chúng tôi chỉ dùng thông tin của bạn trong việc ghi nhận vé.
-        </div>
-        <form class="info-form" action="">
-          <div class="text-section">
-            <div class="input-item">
-              <div class="title">Họ tên</div>
-              <input type="text" placeholder="Họ tên" />
-            </div>
-            <div class="input-item">
-              <div class="title">Số điện thoại</div>
-              <input type="text" placeholder="Số điện thoại" />
-            </div>
-            <div class="input-item">
-              <div class="title">Email</div>
-              <input type="text" placeholder="Email" />
-            </div>
-          </div>
-          <div class="title">Ghi chú hoặc yêu cầu khác (Nếu có)</div>
-          <textarea name="" id="" rows="10"></textarea>
-        </form>
-      </div>
-
-      <div class="main__footer main__footer--0 align-center">
-        <div class="seat-quantity">Số lượng: 1</div>
-        <div class="align-center">
-          <div class="total-price">Tổng cộng: <span>150000đ</span></div>
-          <button class="btn large continue-btn">Tiếp tục</button>
-        </div>
-      </div>
-      <div class="main__footer main__footer--1 align-center">
-        <div class="back-text">Quay lại</div>
-        <div class="align-center">
-          <div class="total-price">Tổng cộng: <span>150000đ</span></div>
-          <button class="btn large continue-btn">Tiếp tục</button>
-        </div>
-      </div>
-      <div class="main__footer main__footer--2 active align-center">
-        <div class="back-text">Quay lại</div>
-        <div class="align-center">
-          <div class="total-price">Tổng cộng: <span>150000đ</span></div>
-          <button class="btn large continue-btn">Tiếp tục</button>
-        </div>
+      <aside>
+        <ul class="sidebar__list">
+          <li class="sidebar__item active">Giới thiệu</li>
+          <li class="sidebar__item">Tầm nhìn</li>
+          <li class="sidebar__item">Sứ mệnh</li>
+          <li class="sidebar__item">Giải thưởng</li>
+          <li class="sidebar__item">Báo Chí</li>
+          <li class="sidebar__item">Nhà đầu tư</li>
+        </ul>
+      </aside>
+      <div class="content">
+        <div class="content__title">Giới thiệu</div>
+        <img
+          src="/static/Images/gioiThieuImg.png"
+          alt=""
+          class="content__img"
+        />
+        <p class="content__para">
+          Được thành lập từ năm 2013, Gobe đã xây dựng được tên tuổi hàng đầu
+          với bề dày hoạt động trong lĩnh vực thương mại điện tử, công nghệ và
+          du lịch. Gobe tự hào là đơn vị đi đầu trong sự nghiệp cách mạng ngành
+          xe khách và du lịch Việt Nam bao gồm các giải pháp: đặt vé & phương
+          tiện thông minh cho hành khách, phần mềm quản lý hiệu quả cho nhà xe
+          (BMS - Bus Management System) và phần mềm hỗ trợ bán vé hiệu quả cho
+          đại lý (AMS- Agent Management System).
+          <br /><br />
+          Hiện tại, Gobe là một trong những hệ thống vé xe lớn nhất Việt Nam.
+          Không chỉ mang đến cho người dùng đa dạng lựa chọn về hãng xe, dòng xe
+          và giải pháp đặt vé nhanh chóng, tiện lợi, Gobe còn có rất nhiều ưu
+          đãi hàng tháng, giúp khách hàng đặt được vé xe khách chất lượng cao
+          với giá thấp nhất thị trường. Hành khách có thể dễ dàng lựa chọn trước
+          chỗ ngồi yêu thích, thanh toán vé trực tuyến, hoặc bằng tiền mặt tại
+          các cửa hàng tiện lợi trên cả nước.
+        </p>
       </div>
     </main>
-
     <!-- <footer>
       <img src="/static/Images/logo.png" alt="" class="footer__logo" />
       <ul class="footer__lists-conatiner">
@@ -353,6 +249,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
     <script src="main.js"></script>
   </body>
 </html>

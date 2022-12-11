@@ -27,14 +27,14 @@
 //     nav.classList.add('shadow');
 //     }
 
-
-
-
+const $$ = document.querySelectorAll.bind(document);
+const $ = document.querySelector.bind(document);
 function handleModalPayMent() {
   const navItems = $$(".main__nav-item");
   const mainContainers = $$(".main__container");
   const mainFooters = $$(".main__footer");
   const closeIcon = $(".modal__close-icon");
+
   const modal = $(".modal");
 
   Array.from(navItems).forEach((navItem, index) => {

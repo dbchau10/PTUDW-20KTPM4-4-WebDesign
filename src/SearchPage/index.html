@@ -8,13 +8,13 @@
     <!--Favicon-->
     <link rel="icon" href="/static/favicon-32x32.png" type="image/png" />
 
-     <!--Bootstrap Import-->
-     <link
-     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-     rel="stylesheet"
-     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-     crossorigin="anonymous"
-   />
+    <!--Bootstrap Import-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
     <!-- Update start-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -24,11 +24,11 @@
     />
     <!-- Update end-->
 
-     <!--FontAwesome-->
-     <script
-     src="https://kit.fontawesome.com/419d1db655.js"
-     crossorigin="anonymous"
-   ></script>
+    <!--FontAwesome-->
+    <script
+      src="https://kit.fontawesome.com/419d1db655.js"
+      crossorigin="anonymous"
+    ></script>
     <!--Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -98,7 +98,10 @@
                   <h2 class="title py-3">Gobe</h2>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="../index.html" aria-current="page"
+                  <a
+                    class="nav-link active"
+                    href="../index.html"
+                    aria-current="page"
                     >Trang chủ <span class="visually-hidden">(current)</span></a
                   >
                 </li>
@@ -106,10 +109,14 @@
                   <a class="nav-link" href="#">Về chúng tôi</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../LoginPage/index.html">Đăng nhập</a>
+                  <a class="nav-link" href="../LoginPage/index.html"
+                    >Đăng nhập</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../SignUpPage/index.html">Đăng ký</a>
+                  <a class="nav-link" href="../SignUpPage/index.html"
+                    >Đăng ký</a
+                  >
                 </li>
               </ul>
             </div>
@@ -120,13 +127,21 @@
 
     <main class="container">
       <form class="route" action="">
-        <select class="route__depart form-select form-select-lg" name="departure-point" required>
+        <select
+          class="route__depart form-select form-select-lg"
+          name="departure-point"
+          required
+        >
           <option value="">Điểm đi</option>
           <option value="saab">Saab</option>
           <option value="opel">Opel</option>
           <option value="audi">Audi</option>
         </select>
-        <select class="route__des form-select form-select-lg" name="destination" required>
+        <select
+          class="route__des form-select form-select-lg"
+          name="destination"
+          required
+        >
           <option value="">Điểm đến</option>
           <option value="saab">Saab</option>
           <option value="opel">Opel</option>
@@ -140,18 +155,36 @@
           Lọc
           <i class="fa-solid fa-sliders"></i>
         </button> -->
-        <button class="btn outline filter-btn" name="filter" id="filter" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <button
+          class="btn outline filter-btn"
+          name="filter"
+          id="filter"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
           <span>Lọc</span>
           <i class="fa-solid fa-arrow-up-wide-short"></i>
         </button>
-        
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
           <div class="offcanvas-header oc-h">
             <h5 class="fw-bold m-0">Bộ lọc</h5>
             <div>
-            <span class="fst-italic text-primary">Xóa lọc</span>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
+              <span class="fst-italic text-primary">Xóa lọc</span>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
           </div>
           <div class="offcanvas-body">
             <h5 class="fw-bold py-4">Giờ đi</h5>
@@ -176,7 +209,7 @@
               </div>
             </div>
             <h5 class="fw-bold py-4">Giá vé</h5>
-            <input type="range" class="form-range" id="customRange1">
+            <input type="range" class="form-range" id="customRange1" />
             <div class="range">
               <div>0đ</div>
               <div>200.000đ</div>
@@ -184,33 +217,75 @@
             <h5 class="fw-bold py-3">Vị trí ghế</h5>
             <h5 class="fw-bold py-4">Nhà xe</h5>
             <div class="input-group mb-3 search-bar">
-              <input type="text" class="form-control" placeholder="Search">
+              <input type="text" class="form-control" placeholder="Search" />
             </div>
             <form>
-              <input type="checkbox" id="vehicle1" name="vehicle1" class="me-2" value="Bike">
-              <label for="vehicle1">AGO Hoàng Phương (39)</label><br>
-              <input type="checkbox" id="vehicle2" name="vehicle2" class="me-2"value="Car">
-              <label for="vehicle2">Anh Huy Đất Cảng (23)</label><br>
-              <input type="checkbox" id="vehicle3" name="vehicle3" class="me-2" value="Boat">
-              <label for="vehicle3">Cát Bà Express (4)</label><br><br>
+              <input
+                type="checkbox"
+                id="vehicle1"
+                name="vehicle1"
+                class="me-2"
+                value="Bike"
+              />
+              <label for="vehicle1">AGO Hoàng Phương (39)</label><br />
+              <input
+                type="checkbox"
+                id="vehicle2"
+                name="vehicle2"
+                class="me-2"
+                value="Car"
+              />
+              <label for="vehicle2">Anh Huy Đất Cảng (23)</label><br />
+              <input
+                type="checkbox"
+                id="vehicle3"
+                name="vehicle3"
+                class="me-2"
+                value="Boat"
+              />
+              <label for="vehicle3">Cát Bà Express (4)</label><br /><br />
             </form>
 
             <h5 class="fw-bold py-3">Điểm đón</h5>
             <div class="input-group mb-3 search-bar">
-              <input type="text" class="form-control" placeholder="Search">
+              <input type="text" class="form-control" placeholder="Search" />
             </div>
             <form>
-              <input type="checkbox" id="vehicle1" name="vehicle1" class="me-2" value="Bike">
-              <label for="vehicle1">AGO Hoàng Phương (39)</label><br>
-              <input type="checkbox" id="vehicle2" name="vehicle2" class="me-2"value="Car">
-              <label for="vehicle2">Anh Huy Đất Cảng (23)</label><br>
-              <input type="checkbox" id="vehicle3" name="vehicle3" class="me-2" value="Boat">
-              <label for="vehicle3">Cát Bà Express (4)</label><br><br>
+              <input
+                type="checkbox"
+                id="vehicle1"
+                name="vehicle1"
+                class="me-2"
+                value="Bike"
+              />
+              <label for="vehicle1">AGO Hoàng Phương (39)</label><br />
+              <input
+                type="checkbox"
+                id="vehicle2"
+                name="vehicle2"
+                class="me-2"
+                value="Car"
+              />
+              <label for="vehicle2">Anh Huy Đất Cảng (23)</label><br />
+              <input
+                type="checkbox"
+                id="vehicle3"
+                name="vehicle3"
+                class="me-2"
+                value="Boat"
+              />
+              <label for="vehicle3">Cát Bà Express (4)</label><br /><br />
             </form>
             <h5 class="fw-bold py-3">Loại ghế</h5>
             <form>
-              <input type="checkbox" id="vehicle1" name="vehicle1" class="me-2" value="Bike">
-              <label for="vehicle1">Ghế ngồi</label><br>
+              <input
+                type="checkbox"
+                id="vehicle1"
+                name="vehicle1"
+                class="me-2"
+                value="Bike"
+              />
+              <label for="vehicle1">Ghế ngồi</label><br />
             </form>
 
             <h5 class="fw-bold py-3">Đánh giá</h5>
@@ -224,13 +299,15 @@
           </div>
         </div>
 
-
-
         <!-- <button class="btn sort-btn">
           Sắp xếp
           <i class="fa-solid fa-angle-down"></i>
         </button> -->
-        <select class="btn outline sort-btn form-select form-select-lg" name="sort" id="sort">
+        <select
+          class="btn outline sort-btn form-select form-select-lg"
+          name="sort"
+          id="sort"
+        >
           <option selected>Sắp xếp</option>
           <option value="early">Giờ đi sớm nhất</option>
           <option value="late">Giờ đi muộn nhất</option>
@@ -529,7 +606,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- Modal -->
-    <!-- <div class="modal">
+    <div class="modal">
       <i class="modal__close-icon fa-solid fa-xmark"></i>
       <div class="modal__container">
         <div class="main__nav">
@@ -671,7 +748,7 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"

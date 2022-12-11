@@ -20,7 +20,7 @@
       src="https://kit.fontawesome.com/419d1db655.js"
       crossorigin="anonymous"
     ></script>
-    
+
     <!--Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -98,17 +98,21 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/src/AboutUsPage/index.html">Về chúng tôi</a>
+                  <a class="nav-link" href="/src/AboutUsPage/index.html"
+                    >Về chúng tôi</a
+                  >
                 </li>
                 <li>
                   <div class="nav__item">
-                    <img
-                      width="40px"
-                      height="40px"
-                      src="/static/Images/avaImg.png"
-                      alt="ava-img"
-                      class="ava"
-                    />
+                    <a href="/src/UserInfoPage/index.html">
+                      <img
+                        width="40px"
+                        height="40px"
+                        src="/static/Images/avaImg.png"
+                        alt="ava-img"
+                        class="ava"
+                      />
+                    </a>
                   </div>
                 </li>
               </ul>
@@ -121,7 +125,11 @@
         <div class="text-white text-center">
           <div class="title">Gobe</div>
         </div>
-        <form method="get" action="../src/SearchPage/index.html" class="mb-3 w-50 rounded-pill bg-white search-form">
+        <form
+          method="get"
+          action="../src/SearchPage/index.html"
+          class="mb-3 w-50 rounded-pill bg-white search-form"
+        >
           <h5 class="align-items-center d-flex ms-3 pt-1">
             <i class="fa-solid fa-location-dot text-black"></i>
           </h5>
@@ -141,13 +149,20 @@
             <option value="">Khánh Hoà</option>
           </select>
           <input type="date" class="form-control border-0 w-10" name="date" />
-          <button class="btn my-2 my-sm-0 btn-search" type="submit" onclick="location.href='../src/SearchPage/index.html'">
+          <button
+            class="btn my-2 my-sm-0 btn-search"
+            type="submit"
+            onclick="location.href='../src/SearchPage/index.html'"
+          >
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
       </div>
       <div class="form-heading d-lg-none">
-        <form class="my-3 submit-form rounded bg-white p-2"  action="../src/SearchPage/index.html">
+        <form
+          class="my-3 submit-form rounded bg-white p-2"
+          action="../src/SearchPage/index.html"
+        >
           <div class="d-flex flex-row">
             <h5 class="align-items-center d-flex ms-3">
               <i class="fa-solid fa-location-dot text-primary"></i>
@@ -183,7 +198,13 @@
             class="form-control border-0 rounded-0 ps-5"
             name="date"
           />
-          <button class="btn btn-success mt-4" type="submit" onclick="location.href='../src/SearchPage/index.html'">Tìm vé</button>
+          <button
+            class="btn btn-success mt-4"
+            type="submit"
+            onclick="location.href='../src/SearchPage/index.html'"
+          >
+            Tìm vé
+          </button>
         </form>
       </div>
     </header>
@@ -478,7 +499,9 @@
     >
       <div class="row">
         <h3>
-          <a href="#top" class="title text-success text-decoration-none">Gobe</a>
+          <a href="#top" class="title text-success text-decoration-none"
+            >Gobe</a
+          >
         </h3>
       </div>
       <div class="row w-100">
@@ -522,6 +545,5 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="./main.js"></script>
-
   </body>
 </html>

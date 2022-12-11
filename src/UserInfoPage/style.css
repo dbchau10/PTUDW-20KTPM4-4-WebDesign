@@ -11,6 +11,10 @@ main {
   padding-top: 64px;
 }
 
+.mt-32 {
+  margin-top: 32px;
+}
+
 aside {
   display: block;
   width: 20%;
@@ -167,39 +171,338 @@ aside {
   border-color: var(--web-green);
   float: right;
 }
+/* Myticket */
 
-/* Footer */
+/* Bus Info */
 
-footer {
-  background-color: var(--white-color);
-  min-height: 60px;
+.bus-item {
+  width: 33.3333%;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  padding: var(--padding-item);
+  padding-top: 0;
+  --padding-item: 16px;
+  margin-bottom: 16px;
 }
-footer {
+.info {
+  width: 100%;
+  position: relative;
+}
+.bus-name {
+  color: var(--black-color);
+  font-size: 24px;
+  margin-right: 8px;
+}
+.bus-item .rate {
+  width: fit-content;
+  color: var(--white-color);
+  background-color: var(--green-color);
+  border-radius: 8px;
+  padding: 4px 8px;
+  margin-bottom: 16px;
+}
+
+.bus-item .rate * {
+  font-size: 12px;
+}
+
+.bus-type {
+  font-size: 16px;
+  color: #6c757d;
+  margin-bottom: 8px;
+}
+
+.info-detail {
+  min-height: 130px;
+}
+
+.route-icon {
+  position: absolute;
+}
+
+.route-info {
+  padding-left: 30px;
+  min-height: 126px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.depart-point {
+}
+.time,
+.pos {
+  color: var(--black-color);
+}
+
+.time {
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 16px;
+}
+
+.pos {
+  font-size: 16px;
+}
+.desti-point * {
+  color: var(--text-color);
+}
+.duration {
+}
+.price {
+  color: var(--green-color);
+  font-size: 26px;
+  font-weight: 600;
+}
+.empty-seat {
+  font-weight: 500;
+}
+
+.choose-btn {
   display: block;
-  padding: 0 var(--header-padding);
+  background-color: var(--choose-btn-color);
+  color: var(--white-color);
+  font-size: 16px;
+  min-width: 150px;
+  height: 50px;
+  border-radius: 4px;
+  width: 100%;
 }
 
-footer * {
-  text-align: right;
+.pay-with-zalo {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  width: fit-content;
+  padding: 12px;
+  margin-top: 16px;
 }
 
-.footer__logo {
+.pay-with-zalo .discount {
+  color: #ff2727;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.pay-with-zalo span {
+  text-align: center;
+  font-size: 12px;
+  color: var(--black-color);
+  width: 70px;
+}
+
+.pay-with-zalo img {
+  width: 40px;
+  height: 40px;
+}
+
+/* My ticket */
+.container--ticket {
+  padding: 32px;
+}
+
+.ticket__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ticket__nav__item {
+  padding: 8px 32px;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 3px solid var(--black-color);
+  color: var(--black-color);
   margin-bottom: 32px;
 }
 
-.footer__lists-conatiner {
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
+.ticket__nav__item.active {
+  border-bottom: 3px solid var(--green-color);
+  color: var(--green-color);
 }
 
-.footer__title {
+.quantity {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--green-color);
+  margin-bottom: 8px;
+}
+
+.quantity span {
+  color: var(--black-color);
+}
+
+.ticket__content {
+  border: 1px solid var(--black-color);
+  padding: 32px;
+  margin-bottom: 16px;
+}
+
+.tiket__bus {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.tiket__bus_type {
+  font-size: 20px;
+  color: var(--text-color);
+  margin-bottom: 16px;
+}
+
+.ticket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tiket__left {
+  width: 50%;
+}
+
+.tiket__right {
+  width: 50%;
+}
+.ticket__id,
+.ticket__user,
+.ticket__phone {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--black-color);
+  margin-bottom: 20px;
+}
+
+.ticket__id span,
+.ticket__user span,
+.ticket__phone span {
+  color: #240046;
+}
+
+.payed_label {
+  padding: 8px 32px;
+  border-radius: 8px;
+  color: var(--white-color);
+  font-weight: 600;
+  background-color: var(--web-green);
+  display: inline-block;
+}
+.price {
+  display: inline-block;
+  margin-left: 32px;
+  font-size: 20px;
+}
+
+.price span {
+  color: var(--black-color);
+}
+
+/* Comment */
+
+.container--comment {
+  padding: 16px;
+}
+
+.comment__title {
+  color: var(--green-color);
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 16px;
 }
-.footer__text {
-  color: var(--black-color);
+
+.comment__list {
+}
+
+.comment__item {
+  border-radius: 16px;
+  background-color: rgba(215, 215, 215, 0.3);
+  padding: 16px;
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.comment__left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comment__img {
+  width: 60%;
+  margin-bottom: 8px;
+}
+.comment__bus {
+  font-size: 16px;
+}
+.comment__ticketId {
   font-size: 16px;
   margin-bottom: 8px;
+}
+
+.comment__right {
+  width: 70%;
+}
+
+.comment__date {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.comment_para {
+  font-size: 14px;
+  color: var(--text-color);
+  margin-bottom: 16px;
+}
+
+.comment__rates {
+}
+
+/* pages */
+
+.pages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #d9d9d9;
+  color: var(--black-color);
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.page.active {
+  color: #49b649;
+  background-color: #dcf9dc;
+}
+
+.title {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+.nav__item {
+  margin-left: 32px;
+}
+header {
+  position: relative;
+}
+
+footer {
+  z-index: 100;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 7rem;
+  text-align: left;
 }

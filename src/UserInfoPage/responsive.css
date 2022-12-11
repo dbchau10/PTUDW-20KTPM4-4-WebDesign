@@ -26,10 +26,39 @@
     float: unset;
     margin: auto;
   }
+
+  .temp {
+    flex-direction: column;
+  }
+
+  .payed_label {
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .price {
+    margin-left: 0;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
+  .ticket__nav {
+    flex-direction: column;
+  }
+
+  .ticket__head {
+    flex-direction: column;
+  }
+  .ticket {
+    flex-direction: column;
+  }
+  .tiket__left {
+    width: 100%;
+  }
+  .tiket__right {
+    width: 100%;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

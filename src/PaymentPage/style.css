@@ -1,5 +1,13 @@
 /* main */
 
+.nav-link {
+  color: var(--text-color);
+}
+
+.nav-link.active {
+  color: var(--white-color) !important;
+}
+
 main {
   margin-top: calc(var(--header-height) + 32px);
   max-width: 1200px;

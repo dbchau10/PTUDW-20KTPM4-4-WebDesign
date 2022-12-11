@@ -1,5 +1,13 @@
 /* main */
 
+.nav-link {
+  color: var(--text-color);
+}
+
+.nav-link.active {
+  color: var(--white-color) !important;
+}
+
 main {
   margin-top: var(--header-height);
   max-width: 1200px;
@@ -22,7 +30,15 @@ main {
   margin-right: 16px;
 }
 
-.img-main {
+.img-.nav-link {
+  color: var(--text-color);
+}
+
+.nav-link.active {
+  color: var(--white-color) !important;
+}
+
+main {
   width: 100%;
 }
 .img-items {

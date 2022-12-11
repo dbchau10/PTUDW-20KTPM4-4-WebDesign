@@ -1,5 +1,13 @@
 /* main */
 
+.nav-link {
+  color: var(--text-color);
+}
+
+.nav-link.active {
+  color: var(--white-color) !important;
+}
+
 main {
   margin-top: var(--header-height);
   width: 1200px;
@@ -60,7 +68,6 @@ aside {
   background-color: rgba(0, 0, 0, 0.1);
   border: 1px solid var(--border-color);
 }
-
 
 .container__title {
   color: var(--web-green);
@@ -489,8 +496,6 @@ aside {
 .nav__item {
   margin-left: 32px;
 }
-
-
 
 footer {
   z-index: 100;

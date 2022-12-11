@@ -552,3 +552,31 @@ footer {
   text-align: left;
 }
 /* Update end */
+
+
+.oc-h, .card-select{
+  background-color: #D9D9D9;
+}
+
+.card-select{
+  margin: 5px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.range{
+  display:flex;
+  justify-content: space-between;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+}

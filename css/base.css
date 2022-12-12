@@ -54,6 +54,10 @@ ul {
   color: var(--text-color);
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }

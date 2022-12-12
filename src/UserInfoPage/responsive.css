@@ -3,6 +3,10 @@
   .nav-link.active {
     color: var(--white-color) !important;
   }
+
+  .right__info-item {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -127,6 +131,7 @@
     margin-right: 4px;
   }
 
-  .container__inner {
+  .container1 {
+    margin: auto;
   }
 }

@@ -153,17 +153,15 @@ aside {
   margin-bottom: 32px;
 }
 .right__info-item {
-  display: block;
+  display: flex;
   padding-bottom: 16px;
   margin-bottom: 16px;
-  height: 60px;
 }
 .info-item-icon {
   width: 40px;
   height: 40px;
   margin-right: 16px;
   display: inline-block;
-  float: left;
 }
 .subtitle1 {
   font-size: 20px;
@@ -175,7 +173,6 @@ aside {
 .btn.outline.btn--update {
   color: var(--web-green);
   border-color: var(--web-green);
-  float: right;
 }
 /* Myticket */
 

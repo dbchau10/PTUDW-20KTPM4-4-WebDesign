@@ -38,9 +38,7 @@ main {
   color: var(--white-color);
 }
 
-main {
-  width: 100%;
-}
+
 .img-items {
   width: 100%;
   display: flex;

@@ -49,6 +49,11 @@
   .price {
     margin-left: 0;
   }
+
+  .pages {
+    width: 100% !important;
+    flex-wrap: wrap;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -67,6 +72,19 @@
     width: 100%;
   }
   .tiket__right {
+    width: 100%;
+  }
+
+  .comment__item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .comment__left {
+    width: unset;
+  }
+
+  .comment__right {
     width: 100%;
   }
 }
@@ -96,6 +114,10 @@
     display: block;
     width: 100%;
     padding: 16px;
+  }
+
+  .pages {
+    width: 70%;
   }
 }
 

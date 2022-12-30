@@ -31,6 +31,42 @@ app.get('/Detail',(req,res)=>{
     });
 })
 
+app.get('/Garage',(req,res)=>{
+    res.render('Garage',{
+        style_base: 'base.css',
+        style_style: 'Garage_style.css',
+        style_responsive: 'Garage_responsive.css',
+        js: 'Garage_main.js',
+    });
+})
+
+app.get('/Payment',(req,res)=>{
+    res.render('Payment',{
+        style_base: 'base.css',
+        style_style: 'Payment_style.css',
+        style_responsive: 'Payment_responsive.css',
+        js: 'Payment_main.js',
+    });
+})
+
+app.get('/Search',(req,res)=>{
+    res.render('Search',{
+        style_base: 'base.css',
+        style_style: 'Search_style.css',
+        style_responsive: 'Search_responsive.css',
+        js: 'Search_main.js',
+    });
+})
+
+app.get('/UserInfo',(req,res)=>{
+    res.render('UserInfo',{
+        style_base: 'base.css',
+        style_style: 'UserInfo_style.css',
+        style_responsive: 'UserInfo_responsive.css',
+        js: 'UserInfo_main.js',
+    });
+})
+
 app.get('/createTables',(req,res)=>{
     let models=require("./models")
     models.sequelize.sync().then(()=>{

@@ -34,7 +34,7 @@ video {
     height: 100%;
     width: 100%;
     z-index: -100;
-    /* -webkit-mask-image: url(/static//masked.png);
+    /* -webkit-mask-image: url(/masked.png);
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: 100vw 100vh; */
 }

@@ -13,41 +13,50 @@ app.set('view engine', 'hbs')
 app.use(express.static(__dirname+'/static'))
 console.log(__dirname)
 
-app.get('/',(req,res)=>{
-    res.render('index',{
-        style_base: 'base.css',
-        style_style: 'AboutUs_style.css',
-        style_responsive: 'AboutUs_responsive.css',
-        js: 'AboutUs_main.js',
-    });
-})
+app.use('/', require('./routes/indexRoute'))
 
-app.get('/Detail',(req,res)=>{
-    res.render('Detail',{
-        style_base: 'base.css',
-        style_style: 'Detail_style.css',
-        style_responsive: 'Detail_responsive.css',
-        js: 'Detail_main.js',
-    });
-})
+// app.get('/',(req,res)=>{
+//     res.render('index',{
+//         style_base: 'base.css',
+//         style_style: 'AboutUs_style.css',
+//         style_responsive: 'AboutUs_responsive.css',
+//         js: 'AboutUs_main.js',
+//     });
+// })
 
-app.get('/Garage',(req,res)=>{
-    res.render('Garage',{
-        style_base: 'base.css',
-        style_style: 'Garage_style.css',
-        style_responsive: 'Garage_responsive.css',
-        js: 'Garage_main.js',
-    });
-})
+app.use('/', require('./routes/detailRoute'))
 
-app.get('/Payment',(req,res)=>{
-    res.render('Payment',{
-        style_base: 'base.css',
-        style_style: 'Payment_style.css',
-        style_responsive: 'Payment_responsive.css',
-        js: 'Payment_main.js',
-    });
-})
+// app.get('/Detail',(req,res)=>{
+//     res.render('Detail',{
+//         style_base: 'base.css',
+//         style_style: 'Detail_style.css',
+//         style_responsive: 'Detail_responsive.css',
+//         js: 'Detail_main.js',
+//     });
+// })
+
+
+app.use('/', require('./routes/garageRoute'))
+
+// app.get('/Garage',(req,res)=>{
+//     res.render('Garage',{
+//         style_base: 'base.css',
+//         style_style: 'Garage_style.css',
+//         style_responsive: 'Garage_responsive.css',
+//         js: 'Garage_main.js',
+//     });
+// })
+
+app.use('/', require('./routes/paymentRoute'))
+
+// app.get('/Payment',(req,res)=>{
+//     res.render('Payment',{
+//         style_base: 'base.css',
+//         style_style: 'Payment_style.css',
+//         style_responsive: 'Payment_responsive.css',
+//         js: 'Payment_main.js',
+//     });
+// })
 
 app.get('/Search',(req,res)=>{
     res.render('Search',{

@@ -15,7 +15,7 @@ const accountInfo = `
     <div class="container__inner__title">Thông tin cá nhân</div>
     <div class="align-center">
       <img
-        src="/static/Images/avaImg.png"
+        src="Images/avaImg.png"
         alt="ava"
         class="container__inner__ava"
       />
@@ -77,7 +77,7 @@ const accountInfo = `
     <div class="right__info-item align-center border-bottom">
       <img
         class="info-item-icon"
-        src="/static/Images/icon_ phone.svg"
+        src="Images/icon_ phone.svg"
         alt=""
         class="icon"
       />
@@ -90,7 +90,7 @@ const accountInfo = `
     <div class="right__info-item align-center">
       <img
         class="info-item-icon"
-        src="/static/Images/icon_ mail.svg"
+        src="Images/icon_ mail.svg"
         alt=""
         class="icon"
       />
@@ -104,7 +104,7 @@ const accountInfo = `
     <div class="right__info-item align-center border-bottom">
       <img
         class="info-item-icon"
-        src="/static/Images/icon_ mật khẩu.svg"
+        src="Images/icon_ mật khẩu.svg"
         alt=""
         class="icon"
       />
@@ -116,7 +116,7 @@ const accountInfo = `
     <div class="right__info-item align-center">
       <img
         class="info-item-icon"
-        src="/static/Images/icon_ check.svg"
+        src="Images/icon_ check.svg"
         alt=""
         class="icon"
       />
@@ -129,7 +129,7 @@ const accountInfo = `
     <div class="right__info-item align-center border-bottom">
       <img
         class="info-item-icon"
-        src="/static/Images/Facebook icon.svg"
+        src="Images/Facebook icon.svg"
         alt=""
         class="icon"
       />
@@ -141,7 +141,7 @@ const accountInfo = `
     <div class="right__info-item align-center">
       <img
         class="info-item-icon"
-        src="/static/Images/Google icon.svg"
+        src="Images/Google icon.svg"
         alt=""
         class="icon"
       />
@@ -188,7 +188,7 @@ const myTicket = `
         <div class="info-detail">
           <img
             class="route-icon"
-            src="/static/Images/route-icon.png"
+            src="Images/route-icon.png"
             alt="route-icon"
           />
           <div class="route-info">
@@ -228,7 +228,7 @@ const comment = `<div class="container--comment">
   <div class="comment__item">
     <div class="comment__left">
       <img
-        src="/static/Images/commnet__img.png"
+        src="Images/commnet__img.png"
         alt=""
         class="comment__img"
       />
@@ -244,7 +244,7 @@ const comment = `<div class="container--comment">
         giờ.
       </div>
       <img
-        src="/static/Images/stars.svg"
+        src="Images/stars.svg"
         alt=""
         class="comment__rates"
       />
@@ -253,7 +253,7 @@ const comment = `<div class="container--comment">
   <div class="comment__item">
     <div class="comment__left">
       <img
-        src="/static/Images/commnet__img.png"
+        src="Images/commnet__img.png"
         alt=""
         class="comment__img"
       />
@@ -269,7 +269,7 @@ const comment = `<div class="container--comment">
         giờ.
       </div>
       <img
-        src="/static/Images/stars.svg"
+        src="Images/stars.svg"
         alt=""
         class="comment__rates"
       />
@@ -278,7 +278,7 @@ const comment = `<div class="container--comment">
   <div class="comment__item">
     <div class="comment__left">
       <img
-        src="/static/Images/commnet__img.png"
+        src="Images/commnet__img.png"
         alt=""
         class="comment__img"
       />
@@ -294,7 +294,7 @@ const comment = `<div class="container--comment">
         giờ.
       </div>
       <img
-        src="/static/Images/stars.svg"
+        src="Images/stars.svg"
         alt=""
         class="comment__rates"
       />
@@ -356,7 +356,7 @@ function handleNavTicketItem1() {
       <div class="info-detail">
         <img
           class="route-icon"
-          src="/static/Images/route-icon.png"
+          src="Images/route-icon.png"
           alt="route-icon"
         />
         <div class="route-info">
@@ -414,7 +414,7 @@ function handleNavTicketItem2() {
         <div class="info-detail">
           <img
             class="route-icon"
-            src="/static/Images/route-icon.png"
+            src="Images/route-icon.png"
             alt="route-icon"
           />
           <div class="route-info">
@@ -462,7 +462,7 @@ function handleNavTicketItem2() {
         <div class="info-detail">
           <img
             class="route-icon"
-            src="/static/Images/route-icon.png"
+            src="Images/route-icon.png"
             alt="route-icon"
           />
           <div class="route-info">
@@ -521,7 +521,7 @@ function handleNavTicketItem3() {
         <div class="info-detail">
           <img
             class="route-icon"
-            src="/static/Images/route-icon.png"
+            src="Images/route-icon.png"
             alt="route-icon"
           />
           <div class="route-info">
@@ -569,7 +569,7 @@ function handleNavTicketItem3() {
         <div class="info-detail">
           <img
             class="route-icon"
-            src="/static/Images/route-icon.png"
+            src="Images/route-icon.png"
             alt="route-icon"
           />
           <div class="route-info">
@@ -617,7 +617,7 @@ function handleNavTicketItem3() {
         <div class="info-detail">
           <img
             class="route-icon"
-            src="/static/Images/route-icon.png"
+            src="Images/route-icon.png"
             alt="route-icon"
           />
           <div class="route-info">

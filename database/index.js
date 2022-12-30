@@ -14,7 +14,12 @@ app.use(express.static(__dirname+'/static'))
 console.log(__dirname)
 
 app.get('/',(req,res)=>{
-    res.render('index')
+    res.render('index',{
+        style_base: 'base.css',
+        style_style: 'AboutUs_style.css',
+        style_responsive: 'AboutUs_responsive',
+        js: 'AboutUs_main.js',
+    });
 })
 app.get('/createTables',(req,res)=>{
     let models=require("./models")

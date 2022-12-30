@@ -17,10 +17,20 @@ app.get('/',(req,res)=>{
     res.render('index',{
         style_base: 'base.css',
         style_style: 'AboutUs_style.css',
-        style_responsive: 'AboutUs_responsive',
+        style_responsive: 'AboutUs_responsive.css',
         js: 'AboutUs_main.js',
     });
 })
+
+app.get('/Detail',(req,res)=>{
+    res.render('Detail',{
+        style_base: 'base.css',
+        style_style: 'Detail_style.css',
+        style_responsive: 'Detail_responsive.css',
+        js: 'Detail_main.js',
+    });
+})
+
 app.get('/createTables',(req,res)=>{
     let models=require("./models")
     models.sequelize.sync().then(()=>{

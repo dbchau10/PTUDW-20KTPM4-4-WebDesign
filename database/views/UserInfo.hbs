@@ -1,0 +1,269 @@
+<main>
+  <aside>
+    <div class="sidebar__header align-center">
+      <img
+        src="/static/Images/avaImg.png"
+        alt="ava-img"
+        class="sidebar__ava"
+      />
+      <div>
+        <span class="sidebar__header__title">Tài khoản của</span>
+        <div class="sidebar__name">Hồ Minh Thanh Tài</div>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      <li class="sidebar__item active">Thông tin tài khoản</li>
+      <li class="sidebar__item">Thành viên thưởng</li>
+      <li class="sidebar__item">Vé của tôi</li>
+      <li class="sidebar__item">Ưu đãi</li>
+      <li class="sidebar__item">Quản lý thẻ</li>
+      <li class="sidebar__item">Nhận xét chuyến đi</li>
+      <li
+        class="sidebar__item"
+        onclick="location.href='/index_notSignIn.html'"
+      >
+        Đăng xuất
+      </li>
+    </ul>
+  </aside>
+  <div class="container1">
+    <div class="container__title">Thông tin tài khoản</div>
+    <div class="container__inner container--account-info flex">
+      <div class="left">
+        <div class="container__inner__title">Thông tin cá nhân</div>
+        <div class="align-center">
+          <img
+            src="/static/Images/avaImg.png"
+            alt="ava"
+            class="container__inner__ava"
+          />
+          <div class="info-item">
+            <div class="info-label">Họ và tên</div>
+            <input
+              class="info-input--text"
+              type="text"
+              value="Hồ Minh Thanh Tài"
+            />
+          </div>
+        </div>
+        <div class="info_list">
+          <div class="info-item">
+            <div class="info-label">Ngày sinh</div>
+            <input class="info-input--date" type="date" name="" id="" />
+          </div>
+          <div class="info-item space-between">
+            <div class="info-label">Giới tính</div>
+            <div>
+              <input
+                class="info-input--radio"
+                type="radio"
+                name="gender"
+                id="male"
+              />
+              <label class="info-label" for="male">Nam</label>
+            </div>
+            <div>
+              <input
+                class="info-input--radio"
+                type="radio"
+                name="gender"
+                id="female"
+              />
+              <label class="info-label" for="female">Nữ</label>
+            </div>
+            <div>
+              <input
+                class="info-input--radio"
+                type="radio"
+                name="gender"
+                id="non-binary"
+              />
+              <label class="info-label" for="non-binary">Non-binary</label>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Quốc tịch</div>
+            <select class="info-input--select" name="nation" id="nation">
+              <option value="Vietnam">Việt Nam</option>
+              <option value="Japan">Nhật bản</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="title-medium">Số điện thoại & Email</div>
+        <div class="right__info-item align-center border-bottom">
+          <img
+            class="info-item-icon"
+            src="/static/Images/icon_ phone.svg"
+            alt=""
+            class="icon"
+          />
+          <div class="inline-block flex-1">
+            <div class="subtitle1">Số điện thoại</div>
+            <div class="subtitle2">0938 452 980</div>
+          </div>
+          <button class="btn btn--update outline small">Cập nhật</button>
+        </div>
+        <div class="right__info-item align-center">
+          <img
+            class="info-item-icon"
+            src="/static/Images/icon_ mail.svg"
+            alt=""
+            class="icon"
+          />
+          <div class="inline-block flex-1">
+            <div class="subtitle1">Địa chỉ email</div>
+            <div class="subtitle2">Thêm địa chỉ email</div>
+          </div>
+          <button class="btn btn--update outline small">Cập nhật</button>
+        </div>
+        <div class="title-medium">Bảo mật</div>
+        <div class="right__info-item align-center border-bottom">
+          <img
+            class="info-item-icon"
+            src="/static/Images/icon_ mật khẩu.svg"
+            alt=""
+            class="icon"
+          />
+          <div class="inline-block flex-1">
+            <div class="subtitle1">Đổi mật khẩu</div>
+            <div class="subtitle2"></div>
+          </div>
+          <button class="btn btn--update outline small">Cập nhật</button>
+        </div>
+        <div class="right__info-item align-center">
+          <img
+            class="info-item-icon"
+            src="/static/Images/icon_ check.svg"
+            alt=""
+            class="icon"
+          />
+          <div class="inline-block flex-1">
+            <div class="subtitle1">Thiết lập mã pin</div>
+            <div class="subtitle2"></div>
+          </div>
+          <button class="btn btn--update outline small">Cập nhật</button>
+        </div>
+        <div class="title-medium">Liên kết mạng xã hội</div>
+
+        <div class="right__info-item align-center border-bottom">
+          <img
+            class="info-item-icon"
+            src="/static/Images/Facebook icon.svg"
+            alt=""
+            class="icon"
+          />
+          <div class="inline-block flex-1">
+            <div class="subtitle1">Facebook</div>
+            <div class="subtitle2"></div>
+          </div>
+          <button class="btn btn--update outline small">Cập nhật</button>
+        </div>
+        <div class="right__info-item align-center">
+          <img
+            class="info-item-icon"
+            src="/static/Images/Google icon.svg"
+            alt=""
+            class="icon"
+          />
+          <div class="inline-block flex-1">
+            <div class="subtitle1">Google</div>
+            <div class="subtitle2"></div>
+          </div>
+          <button class="btn btn--update outline small">Cập nhật</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="container">
+    <div class="container--comment">
+      <div class="comment__title">Nhận xết chuyến đi</div>
+      <div class="comment__list">
+        <div class="comment__item">
+          <div class="comment__left">
+            <img
+              src="/static/Images/commnet__img.png"
+              alt=""
+              class="comment__img"
+            />
+            <div class="comment__bus">Nhà xe: Hoàng Yến</div>
+            <div class="comment__ticketId">Mã vé: 20H1127PD068</div>
+          </div>
+          <div class="comment__right">
+            <div class="comment__date">Đăng ngày 12/10/2022</div>
+            <div class="comment_para">
+              Tài xế thân thiện. Xe chạy đúng giờ. Tài xế thân thiện. Xe
+              chạy đúng giờ. Tài xế thân thiện. Xe chạy đúng giờ. Tài xế
+              thân thiện. Xe chạy đúng giờ. Tài xế thân thiện. Xe chạy đúng
+              giờ.
+            </div>
+            <img
+              src="/static/Images/stars.svg"
+              alt=""
+              class="comment__rates"
+            />
+          </div>
+        </div>
+        <div class="comment__item">
+          <div class="comment__left">
+            <img
+              src="/static/Images/commnet__img.png"
+              alt=""
+              class="comment__img"
+            />
+            <div class="comment__bus">Nhà xe: Hoàng Yến</div>
+            <div class="comment__ticketId">Mã vé: 20H1127PD068</div>
+          </div>
+          <div class="comment__right">
+            <div class="comment__date">Đăng ngày 12/10/2022</div>
+            <div class="comment_para">
+              Tài xế thân thiện. Xe chạy đúng giờ. Tài xế thân thiện. Xe
+              chạy đúng giờ. Tài xế thân thiện. Xe chạy đúng giờ. Tài xế
+              thân thiện. Xe chạy đúng giờ. Tài xế thân thiện. Xe chạy đúng
+              giờ.
+            </div>
+            <img
+              src="/static/Images/stars.svg"
+              alt=""
+              class="comment__rates"
+            />
+          </div>
+        </div>
+        <div class="comment__item">
+          <div class="comment__left">
+            <img
+              src="/static/Images/commnet__img.png"
+              alt=""
+              class="comment__img"
+            />
+            <div class="comment__bus">Nhà xe: Hoàng Yến</div>
+            <div class="comment__ticketId">Mã vé: 20H1127PD068</div>
+          </div>
+          <div class="comment__right">
+            <div class="comment__date">Đăng ngày 12/10/2022</div>
+            <div class="comment_para">
+              Tài xế thân thiện. Xe chạy đúng giờ. Tài xế thân thiện. Xe
+              chạy đúng giờ. Tài xế thân thiện. Xe chạy đúng giờ. Tài xế
+              thân thiện. Xe chạy đúng giờ. Tài xế thân thiện. Xe chạy đúng
+              giờ.
+            </div>
+            <img
+              src="/static/Images/stars.svg"
+              alt=""
+              class="comment__rates"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="pages">
+        <div class="page">1</div>
+        <div class="page">2</div>
+        <div class="page active">3</div>
+        <div class="page">4</div>
+        <div class="page">5</div>
+      </div>
+    </div>
+  </div> -->
+</main>

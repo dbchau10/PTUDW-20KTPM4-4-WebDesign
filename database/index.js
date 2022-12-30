@@ -1,8 +1,20 @@
 const express= require("express")
 const app=express()
+const expressHbs = require('express-handlebars');
+
+app.engine('hbs', expressHbs.engine({
+    extname: 'hbs',
+    defaultLayout: 'layout',
+    layoutsDir: __dirname + '/views/layouts',
+    partialsDir: __dirname + '/views/partials'
+}))
+app.set('view engine', 'hbs')
+
+app.use(express.static(__dirname+'/static'))
+console.log(__dirname)
 
 app.get('/',(req,res)=>{
-    res.send("con cat")
+    res.render('index')
 })
 app.get('/createTables',(req,res)=>{
     let models=require("./models")

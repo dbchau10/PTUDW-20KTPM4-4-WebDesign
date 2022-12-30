@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gobe | Chi tiết vé xe</title>
+    <!--Favicon-->
+    <link rel="icon" href="/static/favicon-32x32.png" type="image/png" />
+
+    <!--Bootstrap Import-->
+    <!-- Update start-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- Update end-->
+
+    <!--FontAwesome-->
+    <script
+      src="https://kit.fontawesome.com/419d1db655.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300;400;500;600&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!--CSS Style-->
+    <link rel="stylesheet" href="/css/base.css" />
+    <!-- <link rel="stylesheet" href="/css/headerAndFooter.css" /> -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+  </head>
+  <body>
+    <!-- <header>
+      <a href="/index.html">
+        <img src="/static/Images/logo.png" alt="ava-img" class="logo" />
+        </a>
+      <nav>
+        <div class="nav__item">
+          <a href="#" class="nav__link">Về chúng tôi</a>
+        </div>
+        <div class="nav__item">
+          <img src="/static/Images/avaImg.png" alt="ava-img" class="ava" />
+        </div>
+      </nav>
+    </header> -->
+
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-light bg-light shadow  py-4 fixed-top">
+        <div class="container">
+          <a class="navbar-brand d-block d-sm-none title text-success" href="./index_notSignIn.html">Gobe</a>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#menu-header"
+            aria-controls="menu-header"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark w-100"
+            tabindex="-1"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+            id="menu-header"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close btn-close-white me-auto"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body ms-auto">
+              <ul class="navbar-nav ms-auto mt-4 mt-lg-0">
+                <li class="nav-item text-white d-sm-none">
+                  <h2 class="title py-3">Gobe</h2>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="/index_notSignIn.html" aria-current="page"
+                    >Trang chủ <span class="visually-hidden">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../AboutUsPage/index_notSignIn.html">Về chúng tôi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../LoginPage/index.html">Đăng nhập</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../SignUpPage/index.html">Đăng ký</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container1">
+        <div class="images-view">
+          <img
+            class="img-main"
+            src="/static/Images/Anh xe.png"
+            alt="img-main"
+            width="100%"
+          />
+          <div class="img-items">
+            <img
+              class="img-item"
+              src="/static/Images/Anh xe.png"
+              alt="img-item"
+            />
+            <img
+              class="img-item"
+              src="/static/Images/Anh xe.png"
+              alt="img-item"
+            />
+            <img
+              class="img-item"
+              src="/static/Images/Anh xe.png"
+              alt="img-item"
+            />
+            <img
+              class="img-item"
+              src="/static/Images/Anh xe.png"
+              alt="img-item"
+            />
+          </div>
+        </div>
+
+        <div class="bus-item">
+          <div class="info">
+            <div class="bus-type">Ghế ngồi 16 chỗ</div>
+            <div class="bus-name">Kết Đoàn Bus</div>
+            <div class="rate">
+              <span>4.8</span>
+              <i class="fa-solid fa-star"></i>
+              <span>(2747)</span>
+            </div>
+
+            <div class="info-detail">
+              <img
+                class="route-icon"
+                src="/static/Images/route-icon.png"
+                alt="route-icon"
+              />
+              <div class="route-info">
+                <div class="depart-point">
+                  <span class="time">14:50</span>
+                  <span class="pos">Văn phòng Mỹ Đình</span>
+                </div>
+                <span class="duration">1h45m</span>
+                <div class="desti-point">
+                  <span class="time">9:50</span>
+                  <span class="pos">728 Thiên Lôi</span>
+                </div>
+              </div>
+              <span class="price"> 150.000đ </span>
+              <span class="empty-seat">Còn 15 chỗ trống</span>
+
+              <button class="btn large choose-btn" onclick="handleChooseBtn()">
+                Chọn chuyến
+              </button>
+            </div>
+            <div class="pay-with-zalo">
+              <div class="discount">50% OFF</div>
+              <span>khi thanh toán với</span>
+              <img src="/static/Images/zaloPayIcon.png" alt="zalopay-icon" />
+            </div>
+          </div>
+        </div>
+
+        <div class="garage__container">
+          <div class="garage">
+            <div class="align-center">
+              <img
+                src="/static/Images/nha_xe.png"
+                alt="garage"
+                class="garage-img"
+              />
+              <div class="garage__title"><span>Nhà xe</span> Hoàng Yến</div>
+            </div>
+
+            <div class="rate align-center">
+              <span>4.5 / 5</span>
+              <img src="/static/Images/Star.svg" alt="star" />
+            </div>
+            <div class="garage__info">
+              <div class="align-center">
+                <img
+                  src="/static/Images/Home_duotone.svg"
+                  alt="home-icon"
+                  class="home-icon"
+                />
+                <div>Trụ sở: 241 Bình Lợi, P.13, Q.Bình Thạnh</div>
+              </div>
+              <div class="align-center">
+                <img
+                  src="/static/Images/icon_ phone.svg"
+                  alt="phone-icon"
+                  class="phone-icon"
+                />
+                <div>Số điện thoại: 1900 9393</div>
+              </div>
+            </div>
+
+            <button
+              class="show-btn btn outline large"
+              onclick="location.href='../GaragePage/index.html'"
+            >
+              <a href="../GaragePage/index_notSignIn.html">Xem Nhà Xe</a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- other buses -->
+      <div class="other-buses">
+        <div class="title">Có thể bạn cũng tìm kiếm</div>
+        <div class="other-buses-list align-center">
+          <div class="other-bus">
+            <div class="rate align-center">
+              <span>4.5 / 5</span>
+              <img src="/static/Images/Star.svg" alt="star" />
+            </div>
+            <div class="garage-name">Hải Âu</div>
+            <div class="route">Hà Nội - Hải Phòng</div>
+            <div class="price">150000đ</div>
+          </div>
+          <div class="other-bus">
+            <div class="rate align-center">
+              <span>4.5 / 5</span>
+              <img src="/static/Images/Star.svg" alt="star" />
+            </div>
+            <div class="garage-name">Hải Âu</div>
+            <div class="route">Hà Nội - Hải Phòng</div>
+            <div class="price">150000đ</div>
+          </div>
+          <div class="other-bus">
+            <div class="rate align-center">
+              <span>4.5 / 5</span>
+              <img src="/static/Images/Star.svg" alt="star" />
+            </div>
+            <div class="garage-name">Hải Âu</div>
+            <div class="route">Hà Nội - Hải Phòng</div>
+            <div class="price">150000đ</div>
+          </div>
+          <div class="other-bus">
+            <div class="rate align-center">
+              <span>4.5 / 5</span>
+              <img src="/static/Images/Star.svg" alt="star" />
+            </div>
+            <div class="garage-name">Hải Âu</div>
+            <div class="route">Hà Nội - Hải Phòng</div>
+            <div class="price">150000đ</div>
+          </div>
+          <div class="other-bus">
+            <div class="rate align-center">
+              <span>4.5 / 5</span>
+              <img src="/static/Images/Star.svg" alt="star" />
+            </div>
+            <div class="garage-name">Hải Âu</div>
+            <div class="route">Hà Nội - Hải Phòng</div>
+            <div class="price">150000đ</div>
+          </div>
+          <div class="other-bus">
+            <div class="rate align-center">
+              <span>4.5 / 5</span>
+              <img src="/static/Images/Star.svg" alt="star" />
+            </div>
+            <div class="garage-name">Hải Âu</div>
+            <div class="route">Hà Nội - Hải Phòng</div>
+            <div class="price">150000đ</div>
+          </div>
+          <div class="other-bus">
+            <div class="rate align-center">
+              <span>4.5 / 5</span>
+              <img src="/static/Images/Star.svg" alt="star" />
+            </div>
+            <div class="garage-name">Hải Âu</div>
+            <div class="route">Hà Nội - Hải Phòng</div>
+            <div class="price">150000đ</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- pick up location -->
+      <div class="pick-up">
+        <div class="pick-up-title">Điểm đón, trả</div>
+        <div class="noti">
+          <span>Lưu ý</span>
+          <div class="noti">
+            Các mốc thời gian đón, trả bên dưới là thời gian dự kiến <br />Lịch
+            này có thể thay đổi tùy theo tình hình thực tế
+          </div>
+        </div>
+        <div class="location-container">
+          <div class="location__head align-center">
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="pick-up-title">Điểm đón</div>
+          </div>
+          <div class="location-info align-center">
+            <div class="time">09:50</div>
+            <span class="location">Văn phòng Mỹ Đình</span>
+          </div>
+          <div class="location-info align-center">
+            <div class="time">09:50</div>
+            <span class="location">Văn phòng Mỹ Đình</span>
+          </div>
+          <div class="location-info align-center">
+            <div class="time">09:50</div>
+            <span class="location">Văn phòng Mỹ Đình</span>
+          </div>
+        </div>
+        <div class="location-container">
+          <div class="location__head align-center">
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="pick-up-title">Điểm trả</div>
+          </div>
+          <div class="location-info align-center">
+            <div class="time">11:15</div>
+            <span class="location">Trung tâm thành phố Hải Phòng</span>
+          </div>
+          <div class="location-info align-center">
+            <div class="time">11:15</div>
+            <span class="location">Trung tâm thành phố Hải Phòng</span>
+          </div>
+          <div class="location-info align-center">
+            <div class="time">11:15</div>
+            <span class="location">Trung tâm thành phố Hải Phòng</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container1">
+        <div class="policy">
+          <div class="title">Chính sách hủy vé</div>
+          <img src="/static/Images/policy.png" alt="policy-img" />
+          <div class="noti">
+            <span>Lưu ý: </span>
+            Phí huỷ sẽ được tính trên giá gốc, không giảm trừ khuyến mãi hoặc
+            giảm giá; đồng thời không vượt quá số tiền quý khách đã thanh toán.
+          </div>
+          <div class="request">
+            <div class="title">Yêu cầu khi lên xe</div>
+            <ul class="req-list">
+              <li class="req-item">
+                Có mặt tại văn phòng/quầy vé/bến xe trước 30 phút để làm thủ tục
+                lên xe
+              </li>
+              <li class="req-item">Đổi vé giấy trước khi lên xe</li>
+              <li class="req-item">
+                Xuất trình SMS/Email đặt vé trước khi lên xe
+              </li>
+              <li class="req-item">Không mang đồ ăn, thức ăn có mùi lên xe</li>
+              <li class="req-item">
+                Không hút thuốc, uống rượu, sử dụng chất kích thích trên xe
+              </li>
+              <li class="req-item">Không mang các vật dễ cháy nổ lên xe</li>
+              <li class="req-item">Không vứt rác trên xe</li>
+              <li class="req-item">Không làm ồn, gây mất trật tự trên xe</li>
+            </ul>
+          </div>
+        </div>
+        <div class="utility-container">
+          <div class="utility">
+            <div class="title">Tiện ích</div>
+            <div class="utility-list">
+              <div class="flex utility-item">
+                <img
+                  src="/static/Images/hands-bubbles-solid-icon.png"
+                  alt="icon"
+                />
+                <div class="flex-1">
+                  <div class="utility-item-title">Nước rửa tay</div>
+                  <div class="utility-item-text">
+                    Nhà xe có trang bị nước rửa tay diệt khuẩn trước khi lên xe
+                    và trong xe
+                  </div>
+                </div>
+              </div>
+              <div class="flex utility-item">
+                <img
+                  src="/static/Images/hands-bubbles-solid-icon.png"
+                  alt="icon"
+                />
+                <div class="flex-1">
+                  <div class="utility-item-title">Nước rửa tay</div>
+                  <div class="utility-item-text">
+                    Nhà xe có trang bị nước rửa tay diệt khuẩn trước khi lên xe
+                    và trong xe
+                  </div>
+                </div>
+              </div>
+              <div class="flex utility-item">
+                <img
+                  src="/static/Images/hands-bubbles-solid-icon.png"
+                  alt="icon"
+                />
+                <div class="flex-1">
+                  <div class="utility-item-title">Nước rửa tay</div>
+                  <div class="utility-item-text">
+                    Nhà xe có trang bị nước rửa tay diệt khuẩn trước khi lên xe
+                    và trong xe
+                  </div>
+                </div>
+              </div>
+              <div class="flex utility-item">
+                <img
+                  src="/static/Images/hands-bubbles-solid-icon.png"
+                  alt="icon"
+                />
+                <div class="flex-1">
+                  <div class="utility-item-title">Nước rửa tay</div>
+                  <div class="utility-item-text">
+                    Nhà xe có trang bị nước rửa tay diệt khuẩn trước khi lên xe
+                    và trong xe
+                  </div>
+                </div>
+              </div>
+              <div class="flex utility-item">
+                <img
+                  src="/static/Images/hands-bubbles-solid-icon.png"
+                  alt="icon"
+                />
+                <div class="flex-1">
+                  <div class="utility-item-title">Nước rửa tay</div>
+                  <div class="utility-item-text">
+                    Nhà xe có trang bị nước rửa tay diệt khuẩn trước khi lên xe
+                    và trong xe
+                  </div>
+                </div>
+              </div>
+              <div class="flex utility-item">
+                <img
+                  src="/static/Images/hands-bubbles-solid-icon.png"
+                  alt="icon"
+                />
+                <div class="flex-1">
+                  <div class="utility-item-title">Nước rửa tay</div>
+                  <div class="utility-item-text">
+                    Nhà xe có trang bị nước rửa tay diệt khuẩn trước khi lên xe
+                    và trong xe
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- customer rate -->
+      <div class="customer-rate">
+        <div class="title">Đánh giá từ khách hàng</div>
+        <div class="rate align-center">
+          <span>4.5/5</span>
+          <div class="align-center">
+            <img src="/static/Images/Star.svg" alt="star" />
+            <img src="/static/Images/Star.svg" alt="star" />
+            <img src="/static/Images/Star.svg" alt="star" />
+            <img src="/static/Images/Star.svg" alt="star" />
+            <img src="/static/Images/Star.svg" alt="star" />
+          </div>
+        </div>
+        <div class="comment-quantity">(327 Bình luận)</div>
+        <div class="comment-list">
+          <div class="comment-item">
+            <img
+              src="/static/Images/ava-palceholder.png"
+              alt="ava-img"
+              class="ava"
+            />
+            <div class="comment-info">
+              <div class="comment-name align-center">
+                <span>Đặng Bảo Châu</span>
+                <div class="align-center">
+                  <img src="/static/Images/Star.svg" alt="star" />
+                  <img src="/static/Images/Star.svg" alt="star" />
+                  <img src="/static/Images/Star.svg" alt="star" />
+                  <img src="/static/Images/Star.svg" alt="star" />
+                  <img src="/static/Images/Star.svg" alt="star" />
+                </div>
+              </div>
+              <div class="comment-text">Chuyến xe tốt</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <img
+              src="/static/Images/ava-palceholder.png"
+              alt="ava-img"
+              class="ava"
+            />
+            <div class="comment-info">
+              <div class="comment-name align-center">
+                <span>Đặng Bảo Châu</span>
+                <div class="align-center">
+                  <img src="/static/Images/Star.svg" alt="star" />
+                  <img src="/static/Images/Star.svg" alt="star" />
+                  <img src="/static/Images/Star.svg" alt="star" />
+                  <img src="/static/Images/Star.svg" alt="star" />
+                  <img src="/static/Images/Star.svg" alt="star" />
+                </div>
+              </div>
+              <div class="comment-text">Chuyến xe tốt</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <img
+              src="/static/Images/ava-palceholder.png"
+              alt="ava-img"
+              class="ava"
+            />
+            <div class="comment-info">
+              <div class="comment-name align-center">
+                <span>Đặng Bảo Châu</span>
+                <div class="align-center">
+                  <img src="/static/Images/Star.svg" alt="star" />
+                  <img src="/static/Images/Star.svg" alt="star" />
+                  <img src="/static/Images/Star.svg" alt="star" />
+                  <img src="/static/Images/Star.svg" alt="star" />
+                  <img src="/static/Images/Star.svg" alt="star" />
+                </div>
+              </div>
+              <div class="comment-text">Chuyến xe tốt</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <img
+              src="/static/Images/ava-palceholder.png"
+              alt="ava-img"
+              class="ava"
+            />
+            <div class="comment-info">
+              <div class="comment-name align-center">
+                <span>Đặng Bảo Châu</span>
+                <div class="align-center">
+                  <img src="/static/Images/Star.svg" alt="star" />
+                  <img src="/static/Images/Star.svg" alt="star" />
+                  <img src="/static/Images/Star.svg" alt="star" />
+                  <img src="/static/Images/Star.svg" alt="star" />
+                  <img src="/static/Images/Star.svg" alt="star" />
+                </div>
+              </div>
+              <div class="comment-text">Chuyến xe tốt</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <img
+              src="/static/Images/ava-palceholder.png"
+              alt="ava-img"
+              class="ava"
+            />
+            <div class="comment-info">
+              <div class="comment-name align-center">
+                <span>Đặng Bảo Châu</span>
+                <div class="align-center">
+                  <img src="/static/Images/Star.svg" alt="star" />
+                  <img src="/static/Images/Star.svg" alt="star" />
+                  <img src="/static/Images/Star.svg" alt="star" />
+                  <img src="/static/Images/Star.svg" alt="star" />
+                  <img src="/static/Images/Star.svg" alt="star" />
+                </div>
+              </div>
+              <div class="comment-text">Chuyến xe tốt</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pages">
+        <div class="page">1</div>
+        <div class="page">2</div>
+        <div class="page active">3</div>
+        <div class="page">4</div>
+        <div class="page">5</div>
+      </div>
+    </main>
+    <!-- <footer>
+      <img src="/static/Images/logo.png" alt="" class="footer__logo" />
+      <ul class="footer__lists-conatiner">
+        <li>
+          <div class="footer__title">Liên hệ</div>
+          <ul>
+            <li class="footer__text">+ 123 400 123</li>
+            <li class="footer__text">Email: gobe@gmail.com</li>
+            <li></li>
+            <li></li>
+          </ul>
+        </li>
+        <li>
+          <div class="footer__title">Về chúng tôi</div>
+          <ul>
+            <li class="footer__text">Giới thiệu Gobe</li>
+            <li class="footer__text">Tuyển dụng</li>
+            <li></li>
+            <li></li>
+          </ul>
+        </li>
+        <li>
+          <div class="footer__title">Hỗ trợ</div>
+          <ul>
+            <li class="footer__text">Hướng dẫn thanh toán</li>
+            <li class="footer__text">Chính sách bảo mật thông tin</li>
+            <li class="footer__text">Chính sách bảo mật thanh toán</li>
+            <li class="footer__text">
+              Chính sách và quy trình<br />giải quyết tranh chấp, khiếu nại
+            </li>
+            <li class="footer__text">Câu hỏi thường gặp</li>
+            <li class="footer__text">Tra cứu đơn hàng</li>
+          </ul>
+        </li>
+      </ul>
+    </footer> -->
+    <!-- Update start -->
+    <footer
+      class="shadow d-flex flex-column align-items-start justify-space-between"
+    >
+      <div class="row">
+        <h3>
+          <a
+            href="/index_notSignIn.html"
+            class="title text-success text-decoration-none"
+            >Gobe</a
+          >
+        </h3>
+      </div>
+      <div class="row w-100">
+        <div class="col-md-4 col-xs-1 my-2">
+          <h5 class="fw-bold">Liên hệ</h5>
+          <div>+ 123 400 123</div>
+          <div>Email: gobe@gmail.com</div>
+        </div>
+        <div class="col-md-4 col-xs-1 my-2">
+          <h5 class="fw-bold">Về chúng tôi</h5>
+          <div>Giới thiệu Gobe</div>
+          <div>Tuyển dụng</div>
+        </div>
+        <div class="col-md-4 col-xs-1 my-2">
+          <h5 class="fw-bold">Hỗ trợ</h5>
+          <div>Hướng dẫn thanh toán</div>
+          <div>Chính sách bảo mật thông tin</div>
+          <div>Chính sách bảo mật thanh toán</div>
+          <div>Chính sách và quy trình giải quyết tranh chấp, khiếu nại</div>
+          <div>Câu hỏi thường gặp</div>
+          <div>Tra cứu đơn hàng</div>
+        </div>
+      </div>
+    </footer>
+    <!-- Update end -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Modal -->
+    <div class="modal">
+      <i class="modal__close-icon fa-solid fa-xmark"></i>
+      <div class="modal__container">
+        <div class="main__nav">
+          <div class="main__nav-item active">
+            <div class="align-center">
+              <div class="nav__index">1</div>
+              <div class="nav__title">Chỗ mong muốn</div>
+            </div>
+          </div>
+          <div class="main__nav-item">
+            <div class="align-center">
+              <div class="nav__index">2</div>
+              <div class="nav__title">Điểm đón trả</div>
+            </div>
+          </div>
+          <div class="main__nav-item">
+            <div class="align-center">
+              <div class="nav__index">3</div>
+              <div class="nav__title">Nhập thông tin</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__container main__container--1 flex active">
+          <div class="left">
+            <div class="title">Chú thích</div>
+            <div class="seat-type-list">
+              <div class="seat-type-item align-center">
+                <img src="/static/Images/ghetrong.svg" alt="seat-type-img" />
+                <span>Còn trống</span>
+              </div>
+              <div class="seat-type-item align-center">
+                <img src="/static/Images/gheko trong.svg" alt="seat-type-img" />
+                <span>Ghế không bán</span>
+              </div>
+              <div class="seat-type-item align-center">
+                <img src="/static/Images/ghedangchon.svg" alt="seat-type-img" />
+                <span>Đang chọn</span>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <img
+              class="seat-map"
+              src="/static/Images/seat-map.svg"
+              alt="seat-map"
+            />
+          </div>
+        </div>
+
+        <div class="main__container main__container--2">
+          <div class="greentext title">
+            An tâm được đón đúng nơi, trả đúng chỗ đã chọn và dễ dàng thay đổi
+            khi cần.
+          </div>
+          <div class="pick-up flex">
+            <div class="location-container left">
+              <div class="location__head align-center">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="pick-up-title">Điểm đón</div>
+              </div>
+              <div class="location-info align-center">
+                <div class="time">09:50</div>
+                <span class="location">Văn phòng Mỹ Đình</span>
+              </div>
+              <div class="location-info align-center">
+                <div class="time">09:50</div>
+                <span class="location">Văn phòng Mỹ Đình</span>
+              </div>
+              <div class="location-info align-center">
+                <div class="time">09:50</div>
+                <span class="location">Văn phòng Mỹ Đình</span>
+              </div>
+            </div>
+            <div class="location-container right">
+              <div class="location__head align-center">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="pick-up-title">Điểm trả</div>
+              </div>
+              <div class="location-info align-center">
+                <div class="time">11:15</div>
+                <span class="location">Trung tâm thành phố Hải Phòng</span>
+              </div>
+              <div class="location-info align-center">
+                <div class="time">11:15</div>
+                <span class="location">Trung tâm thành phố Hải Phòng</span>
+              </div>
+              <div class="location-info align-center">
+                <div class="time">11:15</div>
+                <span class="location">Trung tâm thành phố Hải Phòng</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__container main__container--3">
+          <div class="greentext title">
+            Chúng tôi chỉ dùng thông tin của bạn trong việc ghi nhận vé.
+          </div>
+          <form class="info-form" action="">
+            <div class="text-section">
+              <div class="input-item">
+                <div class="title">Họ tên</div>
+                <input type="text" placeholder="Họ tên" />
+              </div>
+              <div class="input-item">
+                <div class="title">Số điện thoại</div>
+                <input type="text" placeholder="Số điện thoại" />
+              </div>
+              <div class="input-item">
+                <div class="title">Email</div>
+                <input type="text" placeholder="Email" />
+              </div>
+            </div>
+            <div class="title">Ghi chú hoặc yêu cầu khác (Nếu có)</div>
+            <textarea name="" id="" rows="10"></textarea>
+          </form>
+        </div>
+
+        <div class="main__footer main__footer--0 align-center">
+          <div class="seat-quantity">Số lượng: 1</div>
+          <div class="align-center">
+            <div class="total-price">Tổng cộng: <span>150000đ</span></div>
+            <button class="btn large continue-btn">Tiếp tục</button>
+          </div>
+        </div>
+        <div class="main__footer main__footer--1 align-center">
+          <div class="back-text">Quay lại</div>
+          <div class="align-center">
+            <div class="total-price">Tổng cộng: <span>150000đ</span></div>
+            <button class="btn large continue-btn">Tiếp tục</button>
+          </div>
+        </div>
+        <div class="main__footer main__footer--2 active align-center">
+          <div class="back-text">Quay lại</div>
+          <div class="align-center">
+            <div class="total-price">Tổng cộng: <span>150000đ</span></div>
+            <button class="btn large continue-btn">Tiếp tục</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

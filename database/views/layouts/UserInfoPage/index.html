@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gobe | Tìm kiếm</title>
+    <!--Favicon-->
+    <link rel="icon" href="/static/favicon-32x32.png" type="image/png" />
+
+    <!--Bootstrap Import-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- Update start-->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    /> -->
+    <!-- Update end-->
+
+    <!--FontAwesome-->
+    <script
+      src="https://kit.fontawesome.com/419d1db655.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300;400;500;600&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!--CSS Style-->
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-sm navbar-light bg-light shadow py-4 fixed-top"
+      >
+        <div class="container">
+          <a
+            class="navbar-brand d-block d-sm-none title text-success"
+            href="/index.html"
+            >Gobe</a
+          >
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#menu-header"
+            aria-controls="menu-header"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark w-100"
+            tabindex="-1"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+            id="menu-header"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close btn-close-white me-auto"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body ms-auto">
+              <ul
+                class="navbar-nav ms-auto mt-4 mt-lg-0 d-flex align-items-center"
+              >
+                <li class="nav-item text-white d-sm-none">
+                  <h2 class="title py-3">Gobe</h2>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    href="/index.html"
+                    aria-current="page"
+                    >Trang chủ <span class="visually-hidden">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../AboutUsPage/index.html"
+                    >Về chúng tôi</a
+                  >
+                </li>
+                <li>
+                  <div class="nav__item">
+                    <a href="../UserInfoPage/index.html">
+                      <img
+                        width="40px"
+                        height="40px"
+                        src="/static/Images/avaImg.png"
+                        alt="ava-img"
+                        class="ava"
+                      />
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- new header -->
+    <!-- <header>
+      <nav
+        class="navbar navbar-expand-sm navbar-light bg-light shadow py-4 fixed-top"
+      >
+        <div class="container">
+          <img
+            src="/static/Images/logo.png"
+            alt="logoImg"
+            class="header__logo"
+          />
+          <a
+            class="navbar-brand text-success d-block d-sm-none title"
+            href="#top"
+            >Gobe</a
+          >
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#menu-header"
+            aria-controls="menu-header"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark w-100"
+            tabindex="-1"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+            id="menu-header"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close btn-close-white me-auto"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body ms-auto">
+              <ul class="navbar-nav ms-auto mt-4 mt-lg-0">
+                <li class="nav-item text-white d-sm-none">
+                  <h2 class="title py-3">Gobe</h2>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#top" aria-current="page"
+                    >Trang chủ <span class="visually-hidden">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Về chúng tôi</a>
+                </li>
+                <li>
+                  <div class="nav__item">
+        <a href="/src/UserInfoPage/index.html">
+          <div class="nav__item">
+            <img src="/static/Images/avaImg.png" alt="ava-img" class="ava" />
+          </div>
+        </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header> -->
+
+    <main>
+      <aside>
+        <div class="sidebar__header align-center">
+          <img
+            src="/static/Images/avaImg.png"
+            alt="ava-img"
+            class="sidebar__ava"
+          />
+          <div>
+            <span class="sidebar__header__title">Tài khoản của</span>
+            <div class="sidebar__name">Hồ Minh Thanh Tài</div>
+          </div>
+        </div>
+        <ul class="sidebar__list">
+          <li class="sidebar__item active">Thông tin tài khoản</li>
+          <li class="sidebar__item">Thành viên thưởng</li>
+          <li class="sidebar__item">Vé của tôi</li>
+          <li class="sidebar__item">Ưu đãi</li>
+          <li class="sidebar__item">Quản lý thẻ</li>
+          <li class="sidebar__item">Nhận xét chuyến đi</li>
+          <li
+            class="sidebar__item"
+            onclick="location.href='/index_notSignIn.html'"
+          >
+            Đăng xuất
+          </li>
+        </ul>
+      </aside>
+      <div class="container1">
+        <div class="container__title">Thông tin tài khoản</div>
+        <div class="container__inner container--account-info flex">
+          <div class="left">
+            <div class="container__inner__title">Thông tin cá nhân</div>
+            <div class="align-center">
+              <img
+                src="/static/Images/avaImg.png"
+                alt="ava"
+                class="container__inner__ava"
+              />
+              <div class="info-item">
+                <div class="info-label">Họ và tên</div>
+                <input
+                  class="info-input--text"
+                  type="text"
+                  value="Hồ Minh Thanh Tài"
+                />
+              </div>
+            </div>
+            <div class="info_list">
+              <div class="info-item">
+                <div class="info-label">Ngày sinh</div>
+                <input class="info-input--date" type="date" name="" id="" />
+              </div>
+              <div class="info-item space-between">
+                <div class="info-label">Giới tính</div>
+                <div>
+                  <input
+                    class="info-input--radio"
+                    type="radio"
+                    name="gender"
+                    id="male"
+                  />
+                  <label class="info-label" for="male">Nam</label>
+                </div>
+                <div>
+                  <input
+                    class="info-input--radio"
+                    type="radio"
+                    name="gender"
+                    id="female"
+                  />
+                  <label class="info-label" for="female">Nữ</label>
+                </div>
+                <div>
+                  <input
+                    class="info-input--radio"
+                    type="radio"
+                    name="gender"
+                    id="non-binary"
+                  />
+                  <label class="info-label" for="non-binary">Non-binary</label>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-label">Quốc tịch</div>
+                <select class="info-input--select" name="nation" id="nation">
+                  <option value="Vietnam">Việt Nam</option>
+                  <option value="Japan">Nhật bản</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="title-medium">Số điện thoại & Email</div>
+            <div class="right__info-item align-center border-bottom">
+              <img
+                class="info-item-icon"
+                src="/static/Images/icon_ phone.svg"
+                alt=""
+                class="icon"
+              />
+              <div class="inline-block flex-1">
+                <div class="subtitle1">Số điện thoại</div>
+                <div class="subtitle2">0938 452 980</div>
+              </div>
+              <button class="btn btn--update outline small">Cập nhật</button>
+            </div>
+            <div class="right__info-item align-center">
+              <img
+                class="info-item-icon"
+                src="/static/Images/icon_ mail.svg"
+                alt=""
+                class="icon"
+              />
+              <div class="inline-block flex-1">
+                <div class="subtitle1">Địa chỉ email</div>
+                <div class="subtitle2">Thêm địa chỉ email</div>
+              </div>
+              <button class="btn btn--update outline small">Cập nhật</button>
+            </div>
+            <div class="title-medium">Bảo mật</div>
+            <div class="right__info-item align-center border-bottom">
+              <img
+                class="info-item-icon"
+                src="/static/Images/icon_ mật khẩu.svg"
+                alt=""
+                class="icon"
+              />
+              <div class="inline-block flex-1">
+                <div class="subtitle1">Đổi mật khẩu</div>
+                <div class="subtitle2"></div>
+              </div>
+              <button class="btn btn--update outline small">Cập nhật</button>
+            </div>
+            <div class="right__info-item align-center">
+              <img
+                class="info-item-icon"
+                src="/static/Images/icon_ check.svg"
+                alt=""
+                class="icon"
+              />
+              <div class="inline-block flex-1">
+                <div class="subtitle1">Thiết lập mã pin</div>
+                <div class="subtitle2"></div>
+              </div>
+              <button class="btn btn--update outline small">Cập nhật</button>
+            </div>
+            <div class="title-medium">Liên kết mạng xã hội</div>
+
+            <div class="right__info-item align-center border-bottom">
+              <img
+                class="info-item-icon"
+                src="/static/Images/Facebook icon.svg"
+                alt=""
+                class="icon"
+              />
+              <div class="inline-block flex-1">
+                <div class="subtitle1">Facebook</div>
+                <div class="subtitle2"></div>
+              </div>
+              <button class="btn btn--update outline small">Cập nhật</button>
+            </div>
+            <div class="right__info-item align-center">
+              <img
+                class="info-item-icon"
+                src="/static/Images/Google icon.svg"
+                alt=""
+                class="icon"
+              />
+              <div class="inline-block flex-1">
+                <div class="subtitle1">Google</div>
+                <div class="subtitle2"></div>
+              </div>
+              <button class="btn btn--update outline small">Cập nhật</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="container">
+        <div class="container--comment">
+          <div class="comment__title">Nhận xết chuyến đi</div>
+          <div class="comment__list">
+            <div class="comment__item">
+              <div class="comment__left">
+                <img
+                  src="/static/Images/commnet__img.png"
+                  alt=""
+                  class="comment__img"
+                />
+                <div class="comment__bus">Nhà xe: Hoàng Yến</div>
+                <div class="comment__ticketId">Mã vé: 20H1127PD068</div>
+              </div>
+              <div class="comment__right">
+                <div class="comment__date">Đăng ngày 12/10/2022</div>
+                <div class="comment_para">
+                  Tài xế thân thiện. Xe chạy đúng giờ. Tài xế thân thiện. Xe
+                  chạy đúng giờ. Tài xế thân thiện. Xe chạy đúng giờ. Tài xế
+                  thân thiện. Xe chạy đúng giờ. Tài xế thân thiện. Xe chạy đúng
+                  giờ.
+                </div>
+                <img
+                  src="/static/Images/stars.svg"
+                  alt=""
+                  class="comment__rates"
+                />
+              </div>
+            </div>
+            <div class="comment__item">
+              <div class="comment__left">
+                <img
+                  src="/static/Images/commnet__img.png"
+                  alt=""
+                  class="comment__img"
+                />
+                <div class="comment__bus">Nhà xe: Hoàng Yến</div>
+                <div class="comment__ticketId">Mã vé: 20H1127PD068</div>
+              </div>
+              <div class="comment__right">
+                <div class="comment__date">Đăng ngày 12/10/2022</div>
+                <div class="comment_para">
+                  Tài xế thân thiện. Xe chạy đúng giờ. Tài xế thân thiện. Xe
+                  chạy đúng giờ. Tài xế thân thiện. Xe chạy đúng giờ. Tài xế
+                  thân thiện. Xe chạy đúng giờ. Tài xế thân thiện. Xe chạy đúng
+                  giờ.
+                </div>
+                <img
+                  src="/static/Images/stars.svg"
+                  alt=""
+                  class="comment__rates"
+                />
+              </div>
+            </div>
+            <div class="comment__item">
+              <div class="comment__left">
+                <img
+                  src="/static/Images/commnet__img.png"
+                  alt=""
+                  class="comment__img"
+                />
+                <div class="comment__bus">Nhà xe: Hoàng Yến</div>
+                <div class="comment__ticketId">Mã vé: 20H1127PD068</div>
+              </div>
+              <div class="comment__right">
+                <div class="comment__date">Đăng ngày 12/10/2022</div>
+                <div class="comment_para">
+                  Tài xế thân thiện. Xe chạy đúng giờ. Tài xế thân thiện. Xe
+                  chạy đúng giờ. Tài xế thân thiện. Xe chạy đúng giờ. Tài xế
+                  thân thiện. Xe chạy đúng giờ. Tài xế thân thiện. Xe chạy đúng
+                  giờ.
+                </div>
+                <img
+                  src="/static/Images/stars.svg"
+                  alt=""
+                  class="comment__rates"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="pages">
+            <div class="page">1</div>
+            <div class="page">2</div>
+            <div class="page active">3</div>
+            <div class="page">4</div>
+            <div class="page">5</div>
+          </div>
+        </div>
+      </div> -->
+    </main>
+
+    <footer
+      class="shadow d-flex flex-column align-items-start justify-space-between"
+    >
+      <div class="row">
+        <h3>
+          <a href="/index.html" class="title text-success text-decoration-none"
+            >Gobe</a
+          >
+        </h3>
+      </div>
+      <div class="row w-100">
+        <div class="col-md-4 col-xs-1 my-2">
+          <h5 class="fw-bold">Liên hệ</h5>
+          <div>+ 123 400 123</div>
+          <div>Email: gobe@gmail.com</div>
+        </div>
+        <div class="col-md-4 col-xs-1 my-2">
+          <h5 class="fw-bold">Về chúng tôi</h5>
+          <div>Giới thiệu Gobe</div>
+          <div>Tuyển dụng</div>
+        </div>
+        <div class="col-md-4 col-xs-1 my-2">
+          <h5 class="fw-bold">Hỗ trợ</h5>
+          <div>Hướng dẫn thanh toán</div>
+          <div>Chính sách bảo mật thông tin</div>
+          <div>Chính sách bảo mật thanh toán</div>
+          <div>Chính sách và quy trình giải quyết tranh chấp, khiếu nại</div>
+          <div>Câu hỏi thường gặp</div>
+          <div>Tra cứu đơn hàng</div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

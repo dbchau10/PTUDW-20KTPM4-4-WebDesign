@@ -19,13 +19,14 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   khachhang.init({
+    hoten: {
+      type:DataTypes.STRING
+    },
     email: {
-        type:DataTypes.STRING,
-        unique: true
+        type:DataTypes.STRING
     },
     sdt: {
-        type: DataTypes.BOOLEAN,
-        unique: true
+        type:DataTypes.STRING
     },
     ngaysinh: {
         type: DataTypes.DATE,

@@ -21,13 +21,13 @@ module.exports = (sequelize, DataTypes) => {
     noidunggioithieu: DataTypes.TEXT,
     anhnhaxe: DataTypes.STRING,
     sdt: {
-        type:DataTypes.STRING,
-        unique: true
+        type:DataTypes.STRING
+        
     },
     diachi: DataTypes.STRING,
     email: {
-        type:DataTypes.STRING,
-        unique: true
+        type:DataTypes.STRING
+       
     },
     website: DataTypes.STRING,
     soSaoTB: DataTypes.FLOAT

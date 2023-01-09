@@ -2,3 +2,5 @@
 node_modules
 .json
 .yaml
+vexere.sql
+database_scheme.pgerd

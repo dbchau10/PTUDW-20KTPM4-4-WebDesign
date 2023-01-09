@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -36,98 +35,11 @@
     <link rel="stylesheet" href="css/{{style_responsive}}" />
   </head>
   <body>
-
-    <header>
-      <nav class="navbar navbar-expand-sm navbar-light bg-light shadow  py-4 fixed-top">
-        <div class="container">
-          <a class="navbar-brand d-block d-sm-none title text-success" href="SignUp">Gobe</a>
-          <button
-            class="navbar-toggler d-lg-none"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#menu-header"
-            aria-controls="menu-header"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="offcanvas offcanvas-end text-bg-dark w-100"
-            tabindex="-1"
-            aria-labelledby="offcanvasDarkNavbarLabel"
-            id="menu-header"
-          >
-            <div class="offcanvas-header">
-              <button
-                type="button"
-                class="btn-close btn-close-white me-auto"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body ms-auto">
-              <ul class="navbar-nav ms-auto mt-4 mt-lg-0">
-                <li class="nav-item text-white d-sm-none">
-                  <h2 class="title py-3">Gobe</h2>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="/" aria-current="page"
-                    >Trang chủ <span class="visually-hidden">(current)</span></a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="AboutUs">Về chúng tôi</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Login">Đăng nhập</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="SignUp">Đăng ký</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
+    {{{header}}}
 
     {{{body}}}
-   
-    <footer
-      class="shadow d-flex flex-column align-items-start justify-space-between"
-    >
-      <div class="row">
-        <h3>
-          <a
-            href="/"
-            class="title text-success text-decoration-none"
-            >Gobe</a
-          >
-        </h3>
-      </div>
-      <div class="row w-100">
-        <div class="col-md-4 col-xs-1 my-2">
-          <h5 class="fw-bold">Liên hệ</h5>
-          <div>+ 123 400 123</div>
-          <div>Email: gobe@gmail.com</div>
-        </div>
-        <div class="col-md-4 col-xs-1 my-2">
-          <h5 class="fw-bold">Về chúng tôi</h5>
-          <div>Giới thiệu Gobe</div>
-          <div>Tuyển dụng</div>
-        </div>
-        <div class="col-md-4 col-xs-1 my-2">
-          <h5 class="fw-bold">Hỗ trợ</h5>
-          <div>Hướng dẫn thanh toán</div>
-          <div>Chính sách bảo mật thông tin</div>
-          <div>Chính sách bảo mật thanh toán</div>
-          <div>Chính sách và quy trình giải quyết tranh chấp, khiếu nại</div>
-          <div>Câu hỏi thường gặp</div>
-          <div>Tra cứu đơn hàng</div>
-        </div>
-      </div>
-    </footer>
+
+    {{{footer}}}
     <!-- Update end -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

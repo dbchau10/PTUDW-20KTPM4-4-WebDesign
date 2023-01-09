@@ -16,24 +16,14 @@ app.set("view engine", "hbs");
 app.use(express.static(__dirname + "/static"));
 console.log(__dirname);
 
-app.use("/aboutUs", require("./routes/aboutUsRoute"));
-app.use("/detail", require("./routes/detailRoute"));
-app.use("/garage", require("./routes/garageRoute"));
-app.use("/payment", require("./routes/paymentRoute"));
-app.use("/search", require("./routes/searchRoute"));
-app.use("/userInfo", require("./routes/userInfoRoute"));
-app.use("/", require("./routes/indexRoute"));
-// app.use("/index", require("./routes/indexRoute"));
+app.use("/v1", require("./routes/authRoute/user"));
+// app.use("/v2", require("./routes/authRoute/admin"));
+app.use("/accountmanage", require("./routes/accountmanageRoute"));
 
-const accountmanager = require("./routes/accountmanageRoute");
-app.use("/accountmanage", accountmanager);
+// =======================================
 
-app.use("/debug", (req, res) => {
-  res.send("hit");
-});
-//---------------
-const sendemailr = require("./routes/sendEmail");
-app.use("/email/:to_email/:content", sendemailr);
+//=======================================
+app.use("/email/:to_email/:content", require("./routes/sendEmail"));
 
 //-------------------------my code "Khoi"
 const dbr = require("./routes/databaseRoute");

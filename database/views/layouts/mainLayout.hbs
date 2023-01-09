@@ -46,8 +46,191 @@
     />
 
     <!--CSS Style-->
-    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="css/home.css" />
   </head>
+  <header id="top">
+  <video autoplay loop muted>
+    <source
+      src="vietnam.mp4"
+      type="video/mp4"
+      width="100%"
+      height="100%"
+    />
+  </video>
+  <nav class="navbar navbar-expand-sm navbar-dark py-4 fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-block d-sm-none title" href="#top">Gobe</a>
+      <button
+        class="navbar-toggler d-lg-none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#menu-header"
+        aria-controls="menu-header"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="offcanvas offcanvas-end text-bg-dark w-100"
+        tabindex="-1"
+        aria-labelledby="offcanvasDarkNavbarLabel"
+        id="menu-header"
+      >
+        <div class="offcanvas-header">
+          <button
+            type="button"
+            class="btn-close btn-close-white me-auto"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body ms-auto">
+          <ul class="navbar-nav ms-auto mt-4 mt-lg-0">
+            <li class="nav-item text-white d-sm-none">
+              <h2 class="title py-3">Gobe</h2>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#top" aria-current="page"
+                >Trang chủ <span class="visually-hidden">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="AboutUs">Về chúng tôi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Login">Đăng nhập</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="SignUp">Đăng ký</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-  {{{body}}}
+  <div class="text-heading d-none d-lg-flex">
+    <div class="text-white text-center">
+      <div class="title">Gobe</div>
+    </div>
+    <form method="get" action="/" class="mb-3 w-50 rounded-pill bg-white search-form">
+      <h5 class="align-items-center d-flex ms-3 pt-1">
+        <i class="fa-solid fa-location-dot text-black"></i>
+      </h5>
+      <select class="form-select form-select-lg w-40 border-0" name="start">
+        <option selected>Điểm đi</option>
+        <option value="">Hà Nội</option>
+        <option value="">Quảng Ninh</option>
+        <option value="">Ninh Bình</option>
+      </select>
+      <h5 class="align-items-center d-flex ms-3 pt-1">
+        <i class="fa-solid fa-location-dot text-black"></i>
+      </h5>
+      <select class="form-select form-select-lg w-40 border-0" name="end">
+        <option selected>Điểm đến</option>
+        <option value="">Đà Nẵng</option>
+        <option value="">Sài Gòn</option>
+        <option value="">Khánh Hoà</option>
+      </select>
+      <input type="date" class="form-control border-0 w-10" name="date" />
+      <button class="btn my-2 my-sm-0 btn-search" type="submit" onclick="location.href='/'">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </form>
+  </div>
+  <div class="form-heading d-lg-none">
+    <form class="my-3 submit-form rounded bg-white p-2" action="/">
+      <div class="d-flex flex-row">
+        <h5 class="align-items-center d-flex ms-3">
+          <i class="fa-solid fa-location-dot text-primary"></i>
+        </h5>
+        <select
+          class="form-select form-select-lg border-bottom border-0 rounded-0"
+          name=""
+          id=""
+        >
+          <option selected>Điểm đi</option>
+          <option value="">Hà Nội</option>
+          <option value="">Quảng Ninh</option>
+          <option value="">Ninh Bình</option>
+        </select>
+      </div>
+      <div class="d-flex flex-row">
+        <h5 class="align-items-center d-flex ms-3">
+          <i class="fa-solid fa-location-dot text-danger"></i>
+        </h5>
+        <select
+          class="form-select form-select-lg border-bottom border-0 rounded-0"
+          name=""
+          id=""
+        >
+          <option selected>Điểm đến</option>
+          <option value="">Đà Nẵng</option>
+          <option value="">Sài Gòn</option>
+          <option value="">Khánh Hoà</option>
+        </select>
+      </div>
+      <input
+        type="date"
+        class="form-control border-0 rounded-0 ps-5"
+        name="date"
+      />
+      <button class="btn btn-success mt-4" type="submit" onclick="location.href='/'">Tìm vé</button>
+    </form>
+  </div>
+</header>
+
+{{{body}}}
+
+<footer
+  class="shadow d-flex flex-column align-items-start justify-space-between"
+>
+  <div class="row">
+    <h3>
+      <a href="#top" class="title text-success text-decoration-none">Gobe</a>
+    </h3>
+  </div>
+  <div class="row w-100">
+    <div class="col-md-4 col-xs-1 my-2">
+      <h5 class="fw-bold">Liên hệ</h5>
+      <div>+ 123 400 123</div>
+      <div>Email: gobe@gmail.com</div>
+    </div>
+    <div class="col-md-4 col-xs-1 my-2">
+      <h5 class="fw-bold">Về chúng tôi</h5>
+      <div>Giới thiệu Gobe</div>
+      <div>Tuyển dụng</div>
+    </div>
+    <div class="col-md-4 col-xs-1 my-2">
+      <h5 class="fw-bold">Hỗ trợ</h5>
+      <div>Hướng dẫn thanh toán</div>
+      <div>Chính sách bảo mật thông tin</div>
+      <div>Chính sách bảo mật thanh toán</div>
+      <div>Chính sách và quy trình giải quyết tranh chấp, khiếu nại</div>
+      <div>Câu hỏi thường gặp</div>
+      <div>Tra cứu đơn hàng</div>
+    </div>
+  </div>
+</footer>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+  integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+  integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script src="js/main.js"></script>
+  
 </html>

@@ -1,7 +1,7 @@
 const controller = {}
 
 controller.show = (req, res) => {
-    res.render('index_notSignIn',{layout: 'mainLayout'});
+    res.render('SignUp',{layout: "loginLayout"});
 }
 
 module.exports = controller

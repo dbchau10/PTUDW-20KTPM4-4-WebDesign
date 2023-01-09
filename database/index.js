@@ -20,30 +20,20 @@ app.use('/', require('./routes/paymentRoute'))
 app.use('/', require('./routes/searchRoute'))
 app.use('/', require('./routes/userInfoRoute'))
 app.use('/', require('./routes/indexRoute'))
-app.use('/', require('./routes/loginRoute'))
-app.use('/', require('./routes/signUpRoute'))
-app.use('/', require('./routes/signUpDetailsRoute'))
-app.use('/', require('./routes/forgetPasswordRoute'))
+
+const accountmanager=require('./routes/accountmanageRoute');
+app.use('/accountmanage', accountmanager)
+
+app.use('/debug', (req,res)=>{res.send("hit")})
 //---------------
-app.use('/email', require('./routes/sendEmail'))
+const sendemailr=require('./routes/sendEmail');
+app.use('/email', sendemailr)
 
 //-------------------------my code "Khoi"
-const models=require('./models');
-app.get('/createTables',(req,res)=>{
-    models.sequelize.sync().then(()=>{
-        res.send("tables created")
-    })
-})
-app.get('/createData',(req,res)=>{
-    models.sequelize.sync().then(()=>{
-        res.send("data created")
-    })
-})
-app.get('/deleteTables',(req,res)=>{
-    models.sequelize.drop().then(()=>{
-        res.send("drop all tables")
-    })
-})
+const dbr=require('./routes/databaseRoute')
+app.use('/database',dbr)
+
+
 //--------------migrate
 // const seeders=require('./seeders');
 // app.get('/createData',(req,res)=>{

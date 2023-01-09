@@ -31,29 +31,16 @@
       rel="stylesheet"
     />
     <!--CSS Style-->
-    <link rel="stylesheet" href="/css/base.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./responsive.css" />
+    <link rel="stylesheet" href="css/{{style_base}}" />
+    <link rel="stylesheet" href="css/{{style_style}}" />
+    <link rel="stylesheet" href="css/{{style_responsive}}" />
   </head>
   <body>
-    <!-- <header>
-      <a href="/index.html">
-        <img src="Images/logo.png" alt="ava-img" class="logo" />
-        </a>
-      <nav>
-        <div class="nav__item">
-          <a href="#" class="nav__link">Về chúng tôi</a>
-        </div>
-        <div class="nav__item">
-          <img src="Images/avaImg.png" alt="ava-img" class="ava" />
-        </div>
-      </nav>
-    </header> -->
 
     <header>
       <nav class="navbar navbar-expand-sm navbar-light bg-light shadow  py-4 fixed-top">
         <div class="container">
-          <a class="navbar-brand d-block d-sm-none title text-success" href="/index_notSignIn.html">Gobe</a>
+          <a class="navbar-brand d-block d-sm-none title text-success" href="../SignUp.html">Gobe</a>
           <button
             class="navbar-toggler d-lg-none"
             type="button"
@@ -90,13 +77,13 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../AboutUsPage/index_notSignIn.html">Về chúng tôi</a>
+                  <a class="nav-link" href="../">Về chúng tôi</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../LoginPage/index.html">Đăng nhập</a>
+                  <a class="nav-link" href="../Login">Đăng nhập</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../SignUpPage/index.html">Đăng ký</a>
+                  <a class="nav-link" href="../SignUp.html">Đăng ký</a>
                 </li>
               </ul>
             </div>
@@ -105,80 +92,8 @@
       </nav>
     </header>
 
-    <main>
-      <aside>
-        <ul class="sidebar__list">
-          <li class="sidebar__item active">Giới thiệu</li>
-          <li class="sidebar__item">Tầm nhìn</li>
-          <li class="sidebar__item">Sứ mệnh</li>
-          <li class="sidebar__item">Giải thưởng</li>
-          <li class="sidebar__item">Báo Chí</li>
-          <li class="sidebar__item">Nhà đầu tư</li>
-        </ul>
-      </aside>
-      <div class="content">
-        <div class="content__title">Giới thiệu</div>
-        <img
-          src="Images/gioiThieuImg.png"
-          alt=""
-          class="content__img"
-        />
-        <p class="content__para">
-          Được thành lập từ năm 2013, Gobe đã xây dựng được tên tuổi hàng đầu
-          với bề dày hoạt động trong lĩnh vực thương mại điện tử, công nghệ và
-          du lịch. Gobe tự hào là đơn vị đi đầu trong sự nghiệp cách mạng ngành
-          xe khách và du lịch Việt Nam bao gồm các giải pháp: đặt vé & phương
-          tiện thông minh cho hành khách, phần mềm quản lý hiệu quả cho nhà xe
-          (BMS - Bus Management System) và phần mềm hỗ trợ bán vé hiệu quả cho
-          đại lý (AMS- Agent Management System).
-          <br /><br />
-          Hiện tại, Gobe là một trong những hệ thống vé xe lớn nhất Việt Nam.
-          Không chỉ mang đến cho người dùng đa dạng lựa chọn về hãng xe, dòng xe
-          và giải pháp đặt vé nhanh chóng, tiện lợi, Gobe còn có rất nhiều ưu
-          đãi hàng tháng, giúp khách hàng đặt được vé xe khách chất lượng cao
-          với giá thấp nhất thị trường. Hành khách có thể dễ dàng lựa chọn trước
-          chỗ ngồi yêu thích, thanh toán vé trực tuyến, hoặc bằng tiền mặt tại
-          các cửa hàng tiện lợi trên cả nước.
-        </p>
-      </div>
-    </main>
-    <!-- <footer>
-      <img src="Images/logo.png" alt="" class="footer__logo" />
-      <ul class="footer__lists-conatiner">
-        <li>
-          <div class="footer__title">Liên hệ</div>
-          <ul>
-            <li class="footer__text">+ 123 400 123</li>
-            <li class="footer__text">Email: gobe@gmail.com</li>
-            <li></li>
-            <li></li>
-          </ul>
-        </li>
-        <li>
-          <div class="footer__title">Về chúng tôi</div>
-          <ul>
-            <li class="footer__text">Giới thiệu Gobe</li>
-            <li class="footer__text">Tuyển dụng</li>
-            <li></li>
-            <li></li>
-          </ul>
-        </li>
-        <li>
-          <div class="footer__title">Hỗ trợ</div>
-          <ul>
-            <li class="footer__text">Hướng dẫn thanh toán</li>
-            <li class="footer__text">Chính sách bảo mật thông tin</li>
-            <li class="footer__text">Chính sách bảo mật thanh toán</li>
-            <li class="footer__text">
-              Chính sách và quy trình<br />giải quyết tranh chấp, khiếu nại
-            </li>
-            <li class="footer__text">Câu hỏi thường gặp</li>
-            <li class="footer__text">Tra cứu đơn hàng</li>
-          </ul>
-        </li>
-      </ul>
-    </footer> -->
-    <!-- Update start -->
+    {{{body}}}
+   
     <footer
       class="shadow d-flex flex-column align-items-start justify-space-between"
     >
@@ -226,6 +141,6 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <script src="main.js"></script>
+    <script src="js/{{js}}"></script>
   </body>
 </html>

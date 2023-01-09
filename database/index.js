@@ -35,7 +35,7 @@ app.get('/createTables',(req,res)=>{
 })
 app.get('/createData',(req,res)=>{
     models.sequelize.sync().then(()=>{
-        res.send("tables created")
+        res.send("data created")
     })
 })
 app.get('/deleteTables',(req,res)=>{

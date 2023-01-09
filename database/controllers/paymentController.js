@@ -2,6 +2,7 @@ const controller = {}
 
 controller.show = (req, res) => {
     res.render('Payment',{
+        title: 'Payment',
         style_base: 'base.css',
         style_style: 'Payment_style.css',
         style_responsive: 'Payment_responsive.css',

@@ -2,6 +2,7 @@ const controller = {}
 
 controller.show = (req, res) => {
     res.render('UserInfo',{
+        title: 'User Information',
         style_base: 'base.css',
         style_style: 'UserInfo_style.css',
         style_responsive: 'UserInfo_responsive.css',

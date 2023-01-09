@@ -1,7 +1,7 @@
 const controller = {}
 
 controller.show = (req, res) => {
-    res.render('index',{
+    res.render('AboutUs',{
         style_base: 'base.css',
         style_style: 'AboutUs_style.css',
         style_responsive: 'AboutUs_responsive.css',

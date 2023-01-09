@@ -13,7 +13,7 @@ app.set('view engine', 'hbs')
 app.use(express.static(__dirname+'/static'))
 console.log(__dirname)
 
-app.use('/', require('./routes/indexRoute'))
+app.use('/', require('./routes/aboutUsRoute'))
 
 // app.get('/',(req,res)=>{
 //     res.render('index',{
@@ -79,6 +79,8 @@ app.use('/', require('./routes/userInfoRoute'))
 //         js: 'UserInfo_main.js',
 //     });
 // })
+
+app.use('/', require('./routes/mainRoute'))
 
 app.get('/createTables',(req,res)=>{
     let models=require("./models")

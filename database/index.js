@@ -43,6 +43,14 @@ app.get('/deleteTables',(req,res)=>{
         res.send("drop all tables")
     })
 })
+//--------------migrate
+// const seeders=require('./seeders');
+// app.get('/createData',(req,res)=>{
+//     seeders.sequelize.sync().then(()=>{
+//         res.send("data created")
+//     })
+// })
+
 //-------------------------my code "Khoi"
 
 app.set('port',process.env.Port || 3000)

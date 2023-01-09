@@ -24,7 +24,7 @@ module.exports = (sequelize, DataTypes) => {
         defaultValue: DataTypes.NOW
     },
     trangthaive: DataTypes.STRING,
-    idchuyenxe: DataTypes.INTEGER,
+    idghechuyenxe: DataTypes.INTEGER,
     idkhachhang: DataTypes.INTEGER
   }, {
     sequelize,

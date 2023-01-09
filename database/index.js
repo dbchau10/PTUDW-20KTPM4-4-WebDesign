@@ -24,7 +24,8 @@ app.use('/', require('./routes/loginRoute'))
 app.use('/', require('./routes/signUpRoute'))
 app.use('/', require('./routes/signUpDetailsRoute'))
 app.use('/', require('./routes/forgetPasswordRoute'))
-
+//---------------
+app.use('/email', require('./routes/sendEmail'))
 
 //-------------------------my code "Khoi"
 const models=require('./models');

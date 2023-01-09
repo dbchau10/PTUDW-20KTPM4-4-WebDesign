@@ -4,8 +4,10 @@ specifiers:
   express: ^4.18.2
   express-handlebars: ^6.0.6
   nodemon: ^2.0.20
+  package: ^1.0.1
   pg: ^8.8.0
   pg-hstore: ^2.3.4
+  pnpm: ^7.23.0
   sequelize: ^6.28.0
   sequelize-cli: ^6.5.2
 
@@ -13,8 +15,10 @@ dependencies:
   express: 4.18.2
   express-handlebars: 6.0.6
   nodemon: 2.0.20
+  package: 1.0.1
   pg: 8.8.0
   pg-hstore: 2.3.4
+  pnpm: 7.23.0
   sequelize: 6.28.0_pg-hstore@2.3.4+pg@8.8.0
   sequelize-cli: 6.5.2
 
@@ -821,6 +825,11 @@ packages:
       wrappy: 1.0.2
     dev: false
 
+  /package/1.0.1:
+    resolution: {integrity: sha512-g6xZR6CO7okjie83sIRJodgGvaXqymfE5GLhN8N2TmZGShmHc/V23hO/vWbdnuy3D81As3pfovw72gGi42l9qA==}
+    engines: {node: '>= 0.6.0'}
+    dev: false
+
   /packet-reader/1.0.0:
     resolution: {integrity: sha512-HAKu/fG3HpHFO0AA8WE8q2g+gBJaZ9MG7fcKk+IJPLTGAD6Psw4443l+9DGRbOIh3/aXr7Phy0TjilYivJo5XQ==}
     dev: false
@@ -904,6 +913,12 @@ packages:
   /picomatch/2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
+    dev: false
+
+  /pnpm/7.23.0:
+    resolution: {integrity: sha512-0dJQXA+1+mo//tBvSpjb6dmLxx/UmLoeEOk/0FmOZ73GRZRNhMdarnwEenhKHNpiVXGCcvfWXJnvUMB7lp+tRQ==}
+    engines: {node: '>=14.6'}
+    hasBin: true
     dev: false
 
   /postgres-array/2.0.0:

@@ -11,14 +11,15 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      khachhang.hasMany(models.vexe,{foreignKey:'idkhachhang'});
-      khachhang.belongsToMany(models.nhaxe,{through:'danhgias',
-                                foreignKey:'idkhachhang'});
+      // khachhang.hasMany(models.vexe,{foreignKey:'idkhachhang'});
+      // khachhang.belongsToMany(models.nhaxe,{through:'danhgias',
+      //                           foreignKey:'idkhachhang'});
 
       
     }
   }
   khachhang.init({
+    idkhachhang: DataTypes.INTEGER,
     hoten: {
       type:DataTypes.STRING
     },
@@ -32,7 +33,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.DATE,
         defaultValue: DataTypes.NOW
     },
-    PASSWORD: DataTypes.STRING
+    password: DataTypes.STRING
  
   }, {
     sequelize,

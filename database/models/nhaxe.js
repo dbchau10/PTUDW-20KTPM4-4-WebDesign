@@ -11,12 +11,13 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      nhaxe.hasMany(models.chuyenxe,{foreignKey:'idnhaxe'}); 
-      nhaxe.belongsToMany(models.khachhang,{through:'danhgias',
-                                foreignKey:'idnhaxe'});
+      // nhaxe.hasMany(models.chuyenxe,{foreignKey:'idnhaxe'}); 
+      // nhaxe.belongsToMany(models.khachhang,{through:'danhgias',
+      //                           foreignKey:'idnhaxe'});
     }
   }
   nhaxe.init({
+    idnhaxe: DataTypes.INTEGER,
     tennhaxe: DataTypes.STRING,
     noidunggioithieu: DataTypes.TEXT,
     anhnhaxe: DataTypes.STRING,

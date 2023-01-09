@@ -11,14 +11,15 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      chuyenxe.belongsTo(models.nhaxe,{foreignKey:'idnhaxe'});
-      chuyenxe.hasMany(models.vexe,{foreignKey:'idchuyenxe'}); 
-      chuyenxe.hasMany(models.ghechuyenxe,{foreignKey:'idchuyenxe'}); 
+      // chuyenxe.belongsTo(models.nhaxe,{foreignKey:'idnhaxe'});
+      // chuyenxe.hasMany(models.vexe,{foreignKey:'idchuyenxe'}); 
+      // chuyenxe.hasMany(models.ghechuyenxe,{foreignKey:'idchuyenxe'}); 
 
 
     }
   }
   chuyenxe.init({
+    idchuyenxe: DataTypes.INTEGER,
     anhchuyenxe: DataTypes.STRING,
     noikhoihanh: DataTypes.STRING,
     noiketthuc: DataTypes.STRING,
@@ -31,7 +32,8 @@ module.exports = (sequelize, DataTypes) => {
         defaultValue: DataTypes.NOW
     },
     loaixe: DataTypes.STRING,
-    sochongoiconlai: DataTypes.INTEGER
+    sochongoiconlai: DataTypes.INTEGER,
+    idnhaxe: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'chuyenxe',

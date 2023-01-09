@@ -11,20 +11,21 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      vexe.belongsTo(models.chuyenxe,{foreignKey:'idchuyenxe'});
-      vexe.belongsTo(models.khachhang,{foreignKey:'idkhachhang'});
+      // vexe.belongsTo(models.chuyenxe,{foreignKey:'idchuyenxe'});
+      // vexe.belongsTo(models.khachhang,{foreignKey:'idkhachhang'});
 
     }
   }
   vexe.init({
-
+    idvexe: DataTypes.INTEGER,
     giatien: DataTypes.INTEGER,
-    thoiGianDatVe: {
+    thoigiandatve: {
         type: DataTypes.DATE,
         defaultValue: DataTypes.NOW
     },
     trangthaive: DataTypes.STRING,
-    
+    idchuyenxe: DataTypes.INTEGER,
+    idkhachhang: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'vexe',

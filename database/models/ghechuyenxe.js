@@ -11,17 +11,19 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      ghechuyenxe.belongsTo(models.chuyenxe,{foreignKey:'idchuyenxe'});
+      // ghechuyenxe.belongsTo(models.chuyenxe,{foreignKey:'idchuyenxe'});
 
     }
   }
   ghechuyenxe.init({
+    idghechuyenxe: DataTypes.INTEGER,
     vitri: DataTypes.STRING,
-    trangthai: DataTypes.BOOLEAN
- 
+    trangthai: DataTypes.BOOLEAN,
+    idchuyenxe: DataTypes.INTEGER,
   }, {
     sequelize,
     modelName: 'ghechuyenxe',
+    
   });
   return ghechuyenxe;
 };

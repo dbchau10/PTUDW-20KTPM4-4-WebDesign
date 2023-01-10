@@ -4,4 +4,4 @@ const controller = require('../controllers/loginController')
 
 route.get('/Login', controller.show)
 
-module.exports = route
+module.exports = route;

@@ -1,10 +1,7 @@
 <div class="container py-5 h-100">
   <div class="row d-flex justify-content-center align-items-center h-100">
     <div class="col-xl-10">
-      <div
-        class="card text-black shadow bg-glass"
-        style="border-radius: 1rem"
-      >
+      <div class="card text-black shadow bg-glass" style="border-radius: 1rem">
         <div class="row g-0">
           <div
             class="col-md-6 col-lg-5 d-none d-md-flex align-items-center justify-content-center image-custom"
@@ -15,14 +12,13 @@
                   href="/"
                   class="text-decoration-none fw-light text-white"
                   style="font-size: 4rem"
-                  >Gobe</a
-                >
+                >Gobe</a>
                 <h5 class="text-white fw-light">Xin chào!</h5>
                 <p class="text-white fw-light text-center">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Architecto rem corporis nam facere aliquid harum minus
-                  sit, dolore sint nihil omnis molestiae est vero
-                  aspernatur, hic eligendi eaque sunt sapiente.
+                  Architecto rem corporis nam facere aliquid harum minus sit,
+                  dolore sint nihil omnis molestiae est vero aspernatur, hic
+                  eligendi eaque sunt sapiente.
                 </p>
               </div>
             </div>
@@ -32,21 +28,18 @@
               <h3 class="fw-bold py-2" style="color: rbg(78, 158, 112)">
                 Đăng nhập
               </h3>
-              <form>
+              <form action="/login/auth" method="POST">
                 <div class="form-outline mb-4">
-                  <label class="form-label" for="phone"
-                    >Số điện thoại</label
-                  >
+                  <label class="form-label" for="phone">Số điện thoại</label>
                   <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1"
-                      >+84</span
-                    >
+                    <span class="input-group-text" id="basic-addon1">+84</span>
                     <input
                       type="tel"
                       id="phone"
-                      class="form-control"
+                      class="phoneForm form-control"
                       aria-label="Telephone"
                       aria-describedby="basic-addon1"
+                      name="sdt"
                       required
                     />
                   </div>
@@ -57,7 +50,8 @@
                   <input
                     type="password"
                     id="password"
-                    class="form-control"
+                    class="password form-control"
+                    name="password"
                     required
                   />
                 </div>
@@ -74,28 +68,22 @@
                         checked
                       />
                       <label class="form-check-label" for="remember">
-                        Nhớ tài khoản</label
-                      >
+                        Nhớ tài khoản</label>
                     </div>
                   </div>
 
                   <div class="col">
                     <!-- Simple link -->
-                    <a
-                      href="ForgetPassword"
-                      class="text-decoration-none"
-                      >Quên mật khẩu?</a
-                    >
+                    <a href="ForgetPassword" class="text-decoration-none">Quên
+                      mật khẩu?</a>
                   </div>
                 </div>
 
-                <input
-                  class="btn btn-success w-100 outlined-0"
-                  type="submit"
-                  onclick="location.href='/'"
-                  value="Đăng nhập"
-                />
-
+                <button
+                  class="btn btn-success w-100 outlined-0 submitBtn"
+                >
+                  Đăng nhập
+                  </button>
                 <hr class="my-4" />
 
                 <button
@@ -111,8 +99,7 @@
                 <a
                   class="text-decoration-none"
                   href="/accountmanage/SignUp"
-                  >Đăng ký</a
-                >
+                >Đăng ký</a>
               </div>
             </div>
           </div>

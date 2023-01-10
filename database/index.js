@@ -24,6 +24,8 @@ app.use('/', require('./routes/indexRoute'))
 const accountmanager=require('./routes/accountmanageRoute');
 app.use('/accountmanage', accountmanager)
 
+
+
 app.use('/debug', (req,res)=>{res.send("hit")})
 //---------------
 const sendemailr=require('./routes/sendEmail');

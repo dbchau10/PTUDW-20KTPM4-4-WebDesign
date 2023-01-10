@@ -33,8 +33,8 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.DATE,
         defaultValue: DataTypes.NOW
     },
-    password: DataTypes.STRING
- 
+    password: DataTypes.STRING,
+    admin: DataTypes.BOOLEAN
   }, {
     sequelize,
     modelName: 'khachhang',

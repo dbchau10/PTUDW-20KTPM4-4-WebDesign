@@ -1,5 +1,5 @@
 const pool = require("../Pooldb");
-class AccountsController {
+class xeController {
     // [GET]
     async findAllVeXeByUserId(req, res) {
         try {
@@ -9,7 +9,7 @@ class AccountsController {
                 [UserId]
             );
             res.json(account.rows[0]);
-            console.log(account)
+      
         }
         catch (err){
             console.error(err.message);
@@ -22,7 +22,7 @@ class AccountsController {
                 'select * from public."chuyenxes"'
             );
             res.json(account.rows[0]);
-            console.log(account)
+        
         }
         catch (err){
             console.error(err.message);
@@ -36,7 +36,7 @@ class AccountsController {
                 [id]
             );
             res.json(account.rows[0]);
-            console.log(account)
+            
         }
         catch (err){
             console.error(err.message);
@@ -44,13 +44,12 @@ class AccountsController {
     }
     async findChuyenXeByPriceAsc(req, res) {
         try {
-            const {sdt,password} = req.body;
             const account = await pool.query(
-                'SELECT idkhachhang,hoten,email,sdt,ngaysinh,password,admin FROM public."khachhangs" as kh WHERE sdt=$1 and password=$2',
-                [sdt,password]
+                'select  idchuyenxe,min(vx.giatien) from public."chuyenxes" as cx inner join public."vexes" as vx ON vx.idghechuyenxe=cx.idchuyenxe group by idchuyenxe order by min(vx.giatien)'
+               
             );
             res.json(account.rows[0]);
-            console.log(account)
+         
         }
         catch (err){
             console.error(err.message);
@@ -58,27 +57,27 @@ class AccountsController {
     }
     async findChuyenXeByPriceDesc(req, res) {
         try {
-            const {sdt,password} = req.body;
             const account = await pool.query(
-                'SELECT idkhachhang,hoten,email,sdt,ngaysinh,password,admin FROM public."khachhangs" as kh WHERE sdt=$1 and password=$2',
-                [sdt,password]
+                'select  idchuyenxe,min(vx.giatien) from public."chuyenxes" as cx inner join public."vexes" as vx ON vx.idghechuyenxe=cx.idchuyenxe group by idchuyenxe order by min(vx.giatien) decs'
+               
             );
             res.json(account.rows[0]);
-            console.log(account)
+         
         }
         catch (err){
             console.error(err.message);
         }
     }
+    
     async findNhaXeById(req, res) {
         try {
-            const {sdt,password} = req.body;
+            const {idnhaxe} = req.body;
             const account = await pool.query(
-                'SELECT idkhachhang,hoten,email,sdt,ngaysinh,password,admin FROM public."khachhangs" as kh WHERE sdt=$1 and password=$2',
-                [sdt,password]
+                'select * from public."nhaxes" where idnhaxe=$1',
+                [idnhaxe]
             );
             res.json(account.rows[0]);
-            console.log(account)
+         
         }
         catch (err){
             console.error(err.message);
@@ -87,4 +86,4 @@ class AccountsController {
 }
 // ac=new AccountsController;
 // ac.auth({body:{sdt:"1728604899",password:"evjYVyT"}},1)
-module.exports = new AccountsController;
+module.exports = new xeController;
